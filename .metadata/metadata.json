@@ -1,0 +1,11 @@
+﻿{
+	"name":	"ROV",
+	"id":	"\"ROV\"",
+	"version":	"",
+	"supported_game_version":	"",
+	"short_description":	"A",
+	"tags":	["Fixes", "Gameplay", "Government and Estates", "Historical", "Overhaul"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}
