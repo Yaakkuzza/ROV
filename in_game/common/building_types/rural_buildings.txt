@@ -15,16 +15,7 @@
 	location_potential = {
 		is_overseas_for_owner = no
 	}
-	
-	allow = {
-		custom_tooltip = {
-			text = local_bailiff_tt
-			scope:actor = {	total_building_levels_including_construction:bailiff < modifier:num_bailiffs }
-		}
-		owner = scope:actor #not in subjects
-	}
-	
-	
+
 	unique_production_methods = {
 		bailiff_input = {
 			paper = 0.1
@@ -36,7 +27,7 @@
 	}
 
 	modifier = {
-		local_max_control = 0.2
+		local_max_control = 0.05
 		local_nobles_estate_power = 1.0
 		local_peasant_enfranchisment = -0.1
 	}
@@ -67,9 +58,9 @@ fishing_village = {
 	
 		fishing_village_maintenance = {
 			produced = fish
-			output = 0.5
+			output = 0.6
 			
-			salt = 0.08
+			salt = 0.06
 			tools = 0.02
 			
 			debug_max_profit = 0.6
@@ -80,9 +71,9 @@ fishing_village = {
 		
 		arctic_fishing_village_maintenance = {
 			produced = fish
-			output = 0.5
+			output = 0.75
 			
-			salt = 0.08
+			salt = 0.06
 			ivory = 0.01
 			
 			debug_max_profit = 0.6
@@ -93,21 +84,8 @@ fishing_village = {
 	construction_demand = village_construction
 
 	modifier = {
-		local_merchant_capacity = 0.25
 		local_peasants_estate_power = 0.25		#25% higher here.
-		local_food_capacity = 50
-		
-		local_maritime_presence = 0.01
-		
-		local_laborers_desired_pop = 0.1
-		local_soldiers_desired_pop = 0.05
-
-		harbor_suitability = 0.02
-		
-		local_sailors = 0.001
-		
-		
-		
+		local_food_capacity = 50		
 	}
 }
 
@@ -123,16 +101,8 @@ farming_village = {
 	
 	location_potential = {
 		OR = {
-			raw_material = goods:wheat
-			raw_material = goods:maize
-			raw_material = goods:rice
-			raw_material = goods:millet
-			raw_material = goods:legumes
-			raw_material = goods:potato
-			raw_material = goods:livestock
-			raw_material = goods:olives
-			raw_material = goods:fruit
-			raw_material = goods:wool
+			NOT = { climate = arid }
+			NOT = { climate = arctic }
 		}
 	}
 	
@@ -142,10 +112,10 @@ farming_village = {
 	
 	unique_production_methods = {
 		farming_village_maintenance = {
-			tools = 0.025
-			clay = 1.0
+			tools = 0.02
+			clay = 0.48
 			
-			output = 0.5
+			output = 0.4
 			
 			produced = livestock
 			
@@ -158,13 +128,8 @@ farming_village = {
 	construction_demand = village_construction
 
 	modifier = {
-		local_food_capacity = 100
-		local_monthly_food_modifier = 0.04	
+		local_food_capacity = 50
 		local_peasants_estate_power = 0.25		#25% higher here.
-		
-		local_laborers_desired_pop = 0.1
-		local_soldiers_desired_pop = 0.05
-
 	}
 }
 
@@ -199,9 +164,9 @@ forest_village = {
 			
 			output = 0.2
 			
-			sand = 0.1
-			tar = 0.02
-			wild_game = 0.4
+			sand = 0.2
+			tar = 0.04
+			tools = 0.04
 			
 			
 			category = building_maintenance
@@ -209,9 +174,9 @@ forest_village = {
 		hunting_lodges = {
 			produced = wild_game
 			
-			output = 0.20
+			output = 0.6
 			
-			weaponry = 0.05
+			weaponry = 0.1
 
 			
 			debug_max_profit = 0.4
@@ -225,12 +190,8 @@ forest_village = {
 	construction_demand = village_construction
 
 	modifier = {
-		local_monthly_food = 1.0
+		local_monthly_food = 2.0
 		local_peasants_estate_power = 0.25		#25% higher here.
-		
-		local_laborers_desired_pop = 0.1
-		local_soldiers_desired_pop = 0.05
-
 	}
 }
 
@@ -255,27 +216,27 @@ market_village = {
 	unique_production_methods = {
 		rural_blacksmith = {
 			produced = tools
-			output = 0.5
+			output = 0.2
 		
-			iron = 0.4
+			iron = 0.1
 			category = guild_input
 		}
 		
 		rural_glassmaker = {
 			produced = glass
 			output = 0.3
-			sand = 1.0
+			sand = 0.6
 
 			category = guild_input
 		}
 
 		rural_millet_brewery = {
-			millet = 0.5
-			lumber = 0.1
-			tools = 0.07
+			millet = 0.12
+			lumber = 0.04
+			tools = 0.02
 			
 			produced = beer
-			output = 0.5
+			output = 0.3
 
 			
 			category = guild_input
@@ -284,48 +245,36 @@ market_village = {
 			produced = weaponry
 			output = 0.2
 		
-			lumber = 0.32
+			lumber = 0.2
 			category = guild_input
 		}
 		rural_jewelry_carver = {
 			produced = jewelry
-			output = 0.1
+			output = 0.12
 		
-			stone = 0.4
+			stone = 0.3
 			category = guild_input
 		}
 		
 		rural_pottery_maker = {
 			produced = pottery
-			output = 0.2
+			output = 0.6
 		
-			clay = 0.33
+			clay = 0.6
 			category = guild_input
 		}
 	}
 
 	modifier = {
-		local_merchant_capacity = 0.10
-		local_merchant_power = 0.10
-		local_market_access = 0.005
-		
-		local_food_capacity = 50
+		local_market_access = 0.002
 		local_peasants_estate_power = 0.25
-		
-		
-		
-		local_burghers_desired_pop = 0.01
-		local_laborers_desired_pop = 0.1
-		local_soldiers_desired_pop = 0.05
-
-		
 	}
 }
 
 rural_clothmaker = {
 	is_foreign = no
 	pop_type = laborers
-	max_levels = guild_max_level
+	max_levels = rural_building_cap
 	
 	category = consumer_goods_category
 	
@@ -347,26 +296,26 @@ rural_clothmaker = {
 	
 			
 		rural_wool_clothmaker = {
-			wool = 1.0
+			wool = 0.48
 			
 			produced = cloth
-			output = 0.5
+			output = 0.4
 			
 			category = guild_input
 		}
 
 		rural_cotton_clothmaker = {
-			cotton = 0.4
+			cotton = 0.2
 			
 			produced = cloth
-			output = 0.5
+			output = 0.4
 			
 			category = guild_input
 		}
 	
 		
 		rural_fiber_clothmaker = {
-			fiber_crops = 0.5
+			fiber_crops = 0.3
 			
 			produced = cloth
 			output = 0.4
@@ -402,11 +351,11 @@ charcoal_maker = {
 	unique_production_methods = {
 		char_coal_maintenance = {
 			produced = coal
-			output = 0.8
+			output = 0.6
 
 			debug_max_profit = 0.4
 		
-			lumber = 0.8
+			lumber = 0.4
 			category = guild_input
 		}
 
@@ -426,8 +375,8 @@ improved_charcoal_maker = {
 	category = rgo_building_category
 	
 	rural_settlement = yes
-	town = yes
-	city = yes
+	town = no
+	city = no
 	
 	
 
@@ -436,11 +385,11 @@ improved_charcoal_maker = {
 	unique_production_methods = {
 		improved_char_coal_maintenance = {
 			produced = coal
-			output = 1.2
+			output = 0.9
 
 			debug_max_profit = 1
 		
-			lumber = 0.8
+			lumber = 0.6
 			category = guild_input
 		}
 
@@ -488,11 +437,11 @@ elephant_hunting_grounds = {
 	unique_production_methods = {
 		elephant_hunting_grounds_maintenance = {
 			produced = ivory
-			output = 1
+			output = 0.3
 		
-			tools = 0.2
-			weaponry = 0.2
-			elephants = 0.2
+			tools = 0.05
+			weaponry = 0.05
+			elephants = 0.03
 			category = guild_input
 		}
 
@@ -638,21 +587,18 @@ sawmill = {
 
 sheep_farms = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = peasants
 	max_levels = rural_building_cap
 	
-	employment_size = rural_peasant_produce_employment
-	
-	
-	category = rgo_building_category
+	category = village_category
+	employment_size = village_employment_size
 	
 	rural_settlement = yes
 
 	location_potential = {
 		OR = {
-			vegetation = sparse
-			vegetation = farmland
-			vegetation = grasslands
+			NOT = { climate = arid }
+			NOT = { climate = arctic }
 		}
 	}
 
@@ -660,10 +606,10 @@ sheep_farms = {
 		
 		sheep_farm_maintenance = {
 			produced = wool
-			output = 0.5
+			output = 0.48
 			
-			lumber = 0.2
-			tools = 0.08
+			lumber = 0.12
+			tools = 0.04
 			category = building_maintenance
 		}
 	}
@@ -691,16 +637,22 @@ settlement_building = {
 	
 	
 	rural_settlement = yes
-	town = no
-	city = no
+	town = yes
+	city = yes
 
 
 	location_potential = {
-		location_population_percentage < 0.05
+		OR = {
+			location_population_percentage < 0.2
+			population < 20
+		}
 	}	
 	remove_if = {
 		location = {
-			location_population_percentage > 0.1
+			OR = {
+				location_population_percentage > 0.2
+				population > 20
+			}
 		}
 	}
 	
@@ -714,7 +666,6 @@ settlement_building = {
 	build_time = village_build_time
 	
 	modifier = {
-		local_migration_attraction = 1.0
 		local_population_growth = 0.01
 	}
 	

@@ -252,7 +252,7 @@ education_masses_law = {
 			has_unlocked_policy_trigger = { type = scottish_presbyterian_education }
 		}
 		country_modifier = {
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 			clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
 			global_nobles_max_literacy = 5
 			global_clergy_max_literacy = 5

@@ -8,7 +8,7 @@
 	maintenance_demand =  a_warriors_maintenance
 	
 	morale_damage_taken = -0.1
-	max_strength = 1.5
+	max_strength = 0.8
 	
 	buildable = yes
 	

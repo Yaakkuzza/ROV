@@ -1,0 +1,168 @@
+﻿location_base_values = {
+	game_data = {
+		category = location
+	}
+	
+	local_devastation_recovery = 0.005
+	local_monthly_control = 0.0005
+
+
+	max_regiments_trained_at_same_time = 1
+	max_constructions_at_same_time = 1
+
+	
+	local_pop_promotion_speed = 0.01
+	local_pop_demotion_speed = 0.10
+
+	local_food_capacity = 50
+
+	local_frontage_allowed = 10
+
+	local_migration_attraction = 0.1
+	local_garrison_growth = 0.01
+	
+	max_attrition = 10
+	supply_limit = 15
+	
+	hostile_disembark_time_modifier = 0.25
+	
+	local_max_rgo_size = 0.5
+	
+	local_monthly_prosperity = 0.0025
+	
+	local_trade_embark_disembark_cost_modifier = 0.1
+	
+	
+	local_clergy_desired_pop_scaled = 0.005
+	local_nobles_desired_pop_scaled = 0.0025
+	
+}
+
+development = {
+	game_data = {
+		category = location
+	}
+	local_population_capacity_modifier = 0.005
+	local_distance_from_capital_speed_propagation = 0.005
+	local_supply_limit_modifier = 0.02
+	blockade_force_required = 0.01
+	local_migration_attraction = 0.0025
+	local_trade_center_power = 0.001
+
+	local_institution_growth_modifier = 0.01
+	
+	local_construction_speed = 0.01
+	
+	local_monthly_food_modifier = 0.005
+	
+	free_building_levels = 1
+	
+	local_max_rgo_size = 0.05
+	
+	local_life_expectancy = 0.1
+
+	occupation_time = 0.01
+	
+	local_build_buildings_cost = -0.001
+	maximum_stockpile_capacity = 5
+}
+
+capital = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 40
+	local_max_control = 0.30
+	local_population_capacity_modifier = 0.5
+	local_migration_attraction = 0.025
+	
+	local_nobles_desired_pop = 0.02
+	local_clergy_desired_pop = 0.02
+	local_fort_maintenance_cost = -0.50
+	
+	free_building_levels = 100
+}
+
+province_capital = {
+	game_data = {
+		category = location
+	}
+	
+	local_population_capacity_modifier = 0.05
+	local_migration_attraction = 0.01
+	
+	local_nobles_desired_pop = 0.01
+	local_clergy_desired_pop = 0.01
+	
+	free_building_levels = 10
+}
+
+total_population = {
+	game_data = {
+		category = location
+	}
+	supply_limit = 0.02
+	blockade_force_required = 0.02
+
+	local_max_rgo_size = 0.02
+}
+
+rgo_level = {
+	game_data = {
+		category = location
+	}
+	local_laborers_desired_pop = 1
+	free_building_levels = 10
+}
+
+market_center = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.025
+	local_merchant_capacity = 2
+	local_merchant_power = 20
+	local_institution_growth_modifier = 0.25
+	free_building_levels = 100
+	maximum_stockpile_capacity = 250
+}
+
+influence_of_the_old_capital_modifier = {
+	game_data = { category = location }
+	
+	local_proximity_source = 30
+}
+
+#multiplied by how far above FOOD_PRICE food is in this location.
+expensive_food_in_location = {
+	game_data = {
+		category = location
+	}
+	local_population_growth = -0.005
+}
+
+#multiplied by how far below FOOD_PRICE food is in this location.
+cheap_food_in_location = {
+	game_data = {
+		category = location
+	}
+	local_population_growth = 0.005
+}
+
+# scales with how much
+available_free_land = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.1
+	local_population_growth = 0.005
+}
+
+# when its <10% capacity & <10k
+abundant_free_land = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.2
+	local_population_growth = 0.025
+}

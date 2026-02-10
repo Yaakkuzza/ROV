@@ -58,8 +58,7 @@ dissolve_monasteries = {
 				}
 				owner = {
 					add_gold = {
-						value = scope:actor.monthly_income_trade_and_tax
-						multiply = 0.5
+						value = 50
 					}
 				}
 			}

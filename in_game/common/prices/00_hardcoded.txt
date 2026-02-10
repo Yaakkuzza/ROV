@@ -8,19 +8,19 @@ change_heir_selection = {
 }
 
 build_gravel_road = {
-	gold = 10
+	gold = 5
 }
 
 build_paved_road = {
-	gold = 25
+	gold = 10
 }
 
 build_modern_road = {
-	gold = 50
+	gold = 15
 }
 
 build_railroad = {
-	gold = 100
+	gold = 25
 }
 
 expand_rgo_mining = {
@@ -53,7 +53,7 @@ grant_privilege = {
 }
 
 revoke_privilege = {
-	stability = 400
+	stability = 200
 	righteousness = 10
 }
 
@@ -71,8 +71,8 @@ set_cabine_action = {
 }
 
 set_cabinet_member = {
-	scaled_gold = 1.0
-	max_scale = 100
+	scaled_gold = 0.2
+	max_scale = 500
 }
 replace_cabinet_member = {
 	stability = 5
@@ -81,8 +81,8 @@ replace_cabinet_member = {
 
 
 set_policy = {
-	scaled_gold = 1.0
-	max_scale = 200
+	scaled_gold = 0.2
+	max_scale = 2000
 }
 change_policy = {
 	stability = 100
@@ -179,7 +179,7 @@ hire_mercenary_premium = {
 
 # this is multiplied by the total hire cost of the unit.
 bribe_units = {
-	gold = 2.0
+	gold = 2
 }
 
 # this is multiplied by the total hire cost of the unit.
@@ -201,17 +201,15 @@ abandon_colonial_charter = {
 }
 
 capital_movement = {
-	scaled_gold = 12
 	stability = 20
 }
 
 create_market = {
-	gold = 250
-	scaled_gold = 5
+	gold = 1000
 }
 
 relocate_market = {
-	gold = 800
+	gold = 500
 }
 
 train_general = {
@@ -224,14 +222,14 @@ train_admiral = {
 
 recruit_explorer = {
 	gold = 20
-	scaled_gold = 5
+	scaled_gold = 1
 	
 	max_scale = 1000
 }
 
 
 hire_advisor = {
-	government_power = 5
+	government_power = 20
 }
 
 hire_artist = {
@@ -239,7 +237,6 @@ hire_artist = {
 }
 
 destroy_market = {
-	stability = 50
 	prestige = 25
 }
 
@@ -728,8 +725,8 @@ request_aid_price = {
 }
 
 head_of_cabinet_promotion = {
-	scaled_gold = 3.0
-	max_scale = 300
+	scaled_gold = 0.5
+	max_scale = 2000
 }
 
 conduct_keju_examination = {

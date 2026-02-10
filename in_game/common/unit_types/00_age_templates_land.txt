@@ -9,7 +9,7 @@
 a_age_1_traditions_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 0.5
+	max_strength = 0.4
 	combat_power = 1
 
 
@@ -22,7 +22,7 @@ a_age_1_traditions_cavalry = {
 	category = army_cavalry
 	buildable = no
 	max_strength = 0.2
-	combat_power = 4
+	combat_power = 3
 
 	impact = { 
 		jungle = 0.10
@@ -37,10 +37,11 @@ a_age_1_traditions_cavalry = {
 	age = "age_1_traditions"
 }
 
+
 a_age_1_traditions_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.05
+	max_strength = 0.2
 	combat_power = 0.25
 
 	age = "age_1_traditions"
@@ -49,8 +50,8 @@ a_age_1_traditions_auxiliary = {
 a_age_1_traditions_artillery = {
 	category = army_artillery
 	buildable = no
-	max_strength = 0.1
-	combat_power = 2
+	max_strength = 0.2
+	combat_power = 3
 	
 	bombard_efficiency = 0.1
 	
@@ -64,8 +65,8 @@ a_age_1_traditions_artillery = {
 a_age_2_renaissance_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 1.0
-	combat_power = 1
+	max_strength = 0.6
+	combat_power = 1.2
 
 	
 
@@ -77,8 +78,8 @@ a_age_2_renaissance_infantry = {
 a_age_2_renaissance_cavalry = {
 	category = army_cavalry
 	buildable = no
-	max_strength = 0.4
-	combat_power = 4
+	max_strength = 0.3
+	combat_power = 3.3
 
 	impact = { 
 		jungle = 0.10
@@ -96,7 +97,7 @@ a_age_2_renaissance_cavalry = {
 a_age_2_renaissance_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.1
+	max_strength = 0.3
 	combat_power = 0.25
 
 	age = "age_2_renaissance"
@@ -105,8 +106,8 @@ a_age_2_renaissance_auxiliary = {
 a_age_2_renaissance_artillery = {
 	category = army_artillery
 	buildable = no
-	max_strength = 0.2
-	combat_power = 3
+	max_strength = 0.3
+	combat_power = 3.4
 	bombard_efficiency = 0.125
 	
 	artillery_barrage = 3
@@ -118,8 +119,8 @@ a_age_2_renaissance_artillery = {
 a_age_3_discovery_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 1.5
-	combat_power = 1
+	max_strength = 0.9
+	combat_power = 1.5
 
 	age = "age_3_discovery"
 }
@@ -127,8 +128,8 @@ a_age_3_discovery_infantry = {
 a_age_3_discovery_cavalry = {
 	category = army_cavalry
 	buildable = no
-	max_strength = 0.6
-	combat_power = 4
+	max_strength = 0.45
+	combat_power = 3.75
 
 	impact = { 
 		jungle = 0.10
@@ -146,7 +147,7 @@ a_age_3_discovery_cavalry = {
 a_age_3_discovery_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.15
+	max_strength = 0.45
 	combat_power = 0.25
 
 	age = "age_3_discovery"
@@ -155,8 +156,8 @@ a_age_3_discovery_auxiliary = {
 a_age_3_discovery_artillery = {
 	category = army_artillery
 	buildable = no
-	max_strength = 0.6
-	combat_power = 4
+	max_strength = 0.45
+	combat_power = 4.1
 	bombard_efficiency = 0.15
 	
 	artillery_barrage = 4
@@ -169,8 +170,8 @@ a_age_3_discovery_artillery = {
 a_age_4_reformation_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 2.0
-	combat_power = 1.5
+	max_strength = 1.3
+	combat_power = 1.9
 
 	age = "age_4_reformation"
 }
@@ -178,8 +179,8 @@ a_age_4_reformation_infantry = {
 a_age_4_reformation_cavalry = {
 	category = army_cavalry
 	buildable = no
-	max_strength = 0.8
-	combat_power = 4
+	max_strength = 0.65
+	combat_power = 4.35
 
 	impact = { 
 		jungle = 0.10
@@ -197,7 +198,7 @@ a_age_4_reformation_cavalry = {
 a_age_4_reformation_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.2
+	max_strength = 0.65
 	combat_power = 0.25
 
 	age = "age_4_reformation"
@@ -206,8 +207,8 @@ a_age_4_reformation_auxiliary = {
 a_age_4_reformation_artillery = {
 	category = army_artillery
 	buildable = no
-	max_strength = 0.8
-	combat_power = 5
+	max_strength = 0.65
+	combat_power = 5.1
 	bombard_efficiency = 0.20
 	
 	artillery_barrage = 5
@@ -216,21 +217,22 @@ a_age_4_reformation_artillery = {
 }
 
 
+
 ##################################################
 #Heavy and light infantry merge into a single infantry type as gunpowder weapons now dominate the battlefield
 a_age_5_absolutism_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 2.5
-	combat_power = 2.25
+	max_strength = 1.8
+	combat_power = 2.4
 	age = "age_5_absolutism"
 }
 
 a_age_5_absolutism_cavalry = {
 	category = army_cavalry
 	buildable = no
-	max_strength = 1.0
-	combat_power = 4
+	max_strength = 0.9
+	combat_power = 5.1
 	impact = { 
 		jungle = 0.10
 		wetlands = 0.10
@@ -247,7 +249,7 @@ a_age_5_absolutism_cavalry = {
 a_age_5_absolutism_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.25
+	max_strength = 0.9
 	combat_power = 0.25
 	age = "age_5_absolutism"
 }
@@ -255,8 +257,8 @@ a_age_5_absolutism_auxiliary = {
 a_age_5_absolutism_artillery = {
 	category = army_artillery
 	buildable = no
-	max_strength = 1.0
-	combat_power = 5.5
+	max_strength = 0.9
+	combat_power = 6.4
 	bombard_efficiency = 0.25
 	artillery_barrage = 7
 	age = "age_5_absolutism"
@@ -267,7 +269,7 @@ a_age_5_absolutism_artillery = {
 a_age_6_revolutions_infantry = {
 	category = army_infantry
 	buildable = no
-	max_strength = 3.0
+	max_strength = 2.4
 	combat_power = 3
 	age = "age_6_revolutions"
 	
@@ -277,7 +279,7 @@ a_age_6_revolutions_cavalry = {
 	category = army_cavalry
 	buildable = no
 	max_strength = 1.2
-	combat_power = 4
+	combat_power = 6
 	impact = { 
 		jungle = 0.10
 		wetlands = 0.10
@@ -294,7 +296,7 @@ a_age_6_revolutions_cavalry = {
 a_age_6_revolutions_auxiliary = {
 	category = army_auxiliary
 	buildable = no
-	max_strength = 0.3
+	max_strength = 1.2
 	combat_power = 0.25
 	age = "age_6_revolutions"
 }
@@ -303,7 +305,7 @@ a_age_6_revolutions_artillery = {
 	category = army_artillery
 	buildable = no
 	max_strength = 1.2
-	combat_power = 7.5
+	combat_power = 8
 	bombard_efficiency = 0.25
 	artillery_barrage = 9
 	age = "age_6_revolutions"

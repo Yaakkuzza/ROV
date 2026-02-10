@@ -18,12 +18,12 @@
 
 	unique_production_methods = {
 		lacquerware_shop_maintenance = {
-			lumber = 1.2
-			dyes = 0.5
-			tools = 0.12
+			lumber = 0.2
+			dyes = 0.03
+			tools = 0.06
 			
 			produced = lacquerware
-			output = 1.0
+			output = 0.24
 			
 			category = guild_input
 			debug_max_profit = 0.35
@@ -54,12 +54,12 @@ lacquerware_manufactory = {
 		
 		lacquerware_manufactory_maintenance = {
 		
-			lumber = 2
-			dyes = 0.8
-			tools = 0.2
+			lumber = 0.3
+			dyes = 0.045
+			tools = 0.09
 			
 			produced = lacquerware
-			output = 2		
+			output = 0.36		
 			
 			
 			debug_max_profit = 0.6
@@ -70,3 +70,4 @@ lacquerware_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+

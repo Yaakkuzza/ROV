@@ -16,27 +16,27 @@
 	
 	unique_production_methods = {
 		fine_cloth_guild_maintenance = {
-			cloth = 0.8
+			cloth = 0.2
 			produced = fine_cloth
-			output = 0.5
+			output = 0.18
 			
 			category = guild_input
 		}
 
 		wool_weavers_maintenance = {
-			wool = 2.0
+			wool = 0.48
 			
 			produced = fine_cloth
-			output = 0.5
+			output = 0.18
 			
 			category = guild_input
 		}
 
 		silk_weavers_maintenance = {
-			silk = 0.8
+			silk = 0.15
 			
 			produced = fine_cloth
-			output = 0.7
+			output = 0.2
 			
 			category = guild_input
 			debug_max_profit = 0.35	# its ok to be a bit better..
@@ -49,10 +49,10 @@
 					has_variable = spanish_cloth_industry
 				}
 			}
-			wool = 1.6
+			wool = 0.48
 			
 			produced = fine_cloth
-			output = 0.5
+			output = 0.2
 			
 			category = guild_input
 			debug_max_profit = 0.5
@@ -62,8 +62,8 @@
 	unique_production_methods = {
 		base_fine_cloth_guild_maintenance = {
 			produced = fine_cloth
-			dyes = 0.14
-			output = 0.1
+			dyes = 0.075
+			output = 0.09
 			
 			category = guild_input
 			
@@ -71,10 +71,10 @@
 		}
 
 		alum_fine_cloth_guild_maintenance = {
-			alum = 0.05
-			dyes = 0.2
+			alum = 0.02
+			dyes = 0.06
 			produced = fine_cloth
-			output = 0.2
+			output = 0.1
 			
 			category = guild_input
 		}
@@ -85,6 +85,7 @@
 	construction_demand = guild_construction
 
 }
+
 
 fine_cloth_workshop = {
 	is_foreign = no
@@ -104,9 +105,9 @@ fine_cloth_workshop = {
 	
 	unique_production_methods = {
 		fine_cloth_workshop_maintenance = {
-			cloth = 0.8
+			cloth = 0.3
 			produced = fine_cloth
-			output = 0.6
+			output = 0.27
 			
 			category = workshop_input
 			
@@ -114,20 +115,20 @@ fine_cloth_workshop = {
 		}
 
 		wool_weavers_workshop_maintenance = {
-			wool = 2.0
+			wool = 0.72
 			
 			produced = fine_cloth
-			output = 0.6
+			output = 0.27
 			
 			category = workshop_input
 			debug_max_profit = 0.6
 		}
 
 		silk_weavers_workshop_maintenance = {
-			silk = 0.8
+			silk = 0.225
 			
 			produced = fine_cloth
-			output = 0.8
+			output = 0.3
 			
 			category = workshop_input
 			
@@ -142,10 +143,10 @@ fine_cloth_workshop = {
 					has_variable = spanish_cloth_industry
 				}
 			}
-			wool = 1.6
+			wool = 0.72
 			
 			produced = fine_cloth
-			output = 0.6
+			output = 0.3
 			
 			debug_max_profit = 0.8
 			
@@ -156,8 +157,8 @@ fine_cloth_workshop = {
 	unique_production_methods = {
 		base_fine_cloth_workshop_maintenance = {
 			produced = fine_cloth
-			dyes = 0.14
-			output = 0.12
+			dyes = 0.112
+			output = 0.15
 			
 			category = workshop_input
 			
@@ -165,10 +166,10 @@ fine_cloth_workshop = {
 		}
 
 		alum_fine_cloth_workshop_maintenance = {
-			alum = 0.05
-			dyes = 0.26
+			alum = 0.03
+			dyes = 0.09
 			produced = fine_cloth
-			output = 0.25
+			output = 0.135
 			
 			category = workshop_input
 			
@@ -182,6 +183,8 @@ fine_cloth_workshop = {
 	construction_demand = workshop_construction
 
 }
+
+
 
 fine_cloth_manufactory = {
 	is_foreign = no
@@ -204,10 +207,10 @@ fine_cloth_manufactory = {
 
 	unique_production_methods = {
 		silk_cloth_manufactory_maintenance = {
-			silk = 1.8
+			silk = 0.3
 			
 			produced = fine_cloth
-			output = 2.0
+			output = 0.4
 			
 			category = manufactory_input
 			debug_max_profit = 0.7
@@ -215,10 +218,10 @@ fine_cloth_manufactory = {
 
 		fine_cloth_manufactory_maintenance = {
 			produced = fine_cloth
-			cloth = 2.4
+			cloth = 0.4
 
 
-			output = 2.0
+			output = 0.36
 			debug_max_profit = 0.7
 			
 			category = manufactory_input
@@ -229,7 +232,7 @@ fine_cloth_manufactory = {
 	unique_production_methods = {
 
 		base_cloth_manufactory_maintenance = {
-			dyes = 0.25
+			dyes = 0.15
 			
 			produced = fine_cloth
 			output = 0.2
@@ -240,9 +243,9 @@ fine_cloth_manufactory = {
 
 		alum_fine_cloth_manufactory_maintenance = {
 			produced = fine_cloth
-			output = 0.4
+			output = 0.2
 			dyes = 0.4
-			alum = 0.1
+			alum = 0.12
 			
 			category = guild_input
 			debug_max_profit = 0.3
@@ -252,6 +255,7 @@ fine_cloth_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = guild_construction
 }
+
 
 fine_cloth_mill = {
 	is_foreign = no
@@ -273,11 +277,11 @@ fine_cloth_mill = {
 	
 	unique_production_methods = {
 		fine_cloth_mill_maintenance = {
-			cloth = 3.7
-			dyes = 0.25
+			cloth = 0.46
+			dyes = 0.03
 			
 			produced = fine_cloth
-			output = 4
+			output = 0.45
 			
 			debug_max_profit = 1.0
 			
@@ -285,11 +289,11 @@ fine_cloth_mill = {
 		}
 
 		silk_cloth_mill_maintenance = {
-			silk = 2.8
-			dyes = 0.25
+			silk = 0.345
+			dyes = 0.03
 			
 			produced = fine_cloth
-			output = 4
+			output = 0.5
 			
 			debug_max_profit = 1.0
 			

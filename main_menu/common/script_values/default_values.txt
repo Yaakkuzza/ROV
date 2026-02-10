@@ -783,14 +783,14 @@ cripple_trade_efficiency_penalty = -1.0
 tiny_tax_income_efficiency_bonus = 0.01
 small_tax_income_efficiency_bonus = 0.02
 medium_tax_income_efficiency_bonus = 0.03
-large_tax_income_efficiency_bonus = 0.05
-huge_tax_income_efficiency_bonus = 0.1
+large_tax_income_efficiency_bonus = 0.04
+huge_tax_income_efficiency_bonus = 0.05
 
 tiny_tax_income_efficiency_penalty = -0.01
-small_tax_income_efficiency_penalty = -0.025
-medium_tax_income_efficiency_penalty = -0.05
-large_tax_income_efficiency_penalty = -0.1
-huge_tax_income_efficiency_penalty = -0.2
+small_tax_income_efficiency_penalty = -0.02
+medium_tax_income_efficiency_penalty = -0.03
+large_tax_income_efficiency_penalty = -0.04
+huge_tax_income_efficiency_penalty = -0.05
 
 
 ##############################################
@@ -857,17 +857,17 @@ small_satisfaction_penalty_scaled = -0.01
 
 #burghers
 guild_employment = 						0.2
-workshop_employment = 					0.25
-manufactory_employment =				0.3
-trade_employment = 						0.25
+workshop_employment = 					0.3
+manufactory_employment =				0.4
+trade_employment = 						0.2
 foreign_trade_employment = 				0.1
-large_foreign_trade_employment = 		0.25
-huge_foreign_trade_employment =        	1.0
+large_foreign_trade_employment = 		0.2
+huge_foreign_trade_employment =        	0.5
 burghers_medical_employment = 			0.2
 cultural_employment = 					0.2
 large_cultural_employment = 			0.4
 large_burgher_employment = 				0.5
-generic_burgher_employment = 			0.25
+generic_burgher_employment = 			0.2
 small_burgher_employment = 				0.1
 estate_burgher_employment = 			0.05
 military_support_employment = 			0.2
@@ -910,8 +910,8 @@ pirate_building_employment = 			0.1
 generic_peasant_building_employment = 	0.25
 advanced_peasant_building_employment = 	0.5
 capital_peasant_employment = 			2.0
-village_employment_size = 				1.0
-rural_peasant_produce_employment = 		1.0
+village_employment_size = 				0.5
+rural_peasant_produce_employment = 		0.5
 rural_peasant_enhance_employment = 		0.25
 tiny_rural_peasant_produce_employment = 0.25
 tiny_rural_peasant_enhance_employment = 0.1

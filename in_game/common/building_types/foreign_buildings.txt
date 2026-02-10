@@ -168,12 +168,12 @@ slave_center = {
 	
 	unique_production_methods = {
 		slave_center_maintenance = {
-			stone = 0.1
-			tools = 0.1
-			firearms = 0.05
-			paper = 0.05
+			leather = 0.1
+			tools = 0.05
+			weaponry = 0.05
+
 			produced = slaves_goods
-			output = 1
+			output = 0.4
 			
 			debug_max_profit = -1  
 			category = building_maintenance

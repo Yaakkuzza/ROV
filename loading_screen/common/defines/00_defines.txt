@@ -6,11 +6,11 @@
 	MORNING_OFFSET = 8
 	
 	GAME_SPEED_TICKS = {	# how many seconds should an hour take in every game speed
-		1
-		0.5
-		0.25
-		0.1
-		0.05
+		0.64
+		0.32
+		0.16
+		0.08
+		0.04
 		0.02
 		0.0
 	}
@@ -368,7 +368,7 @@ NCombat = {
 	
 	MAX_FRONTAGE_OVERSTACKING = 1.25	#25% overstack in flanks.
 	
-	LAND_LEVY_COMBAT_IMPACT = 0.50
+	LAND_LEVY_COMBAT_IMPACT = 0.4
 	
 	INITIATIVE_BASE_CHANCE = 0.1	# base chance each tick
 	INITIATIVE_CHANCE_EACH = 0.02 # Chance to engage per point of initiative
@@ -1389,7 +1389,7 @@ NEstate = {
 	MAX_PEASANT_ENFRANCHISMENT = 1.0
 	
 	
-	LOW_POWER_THRESHOLD = 0.25
+	LOW_POWER_THRESHOLD = 1
 	LOW_SATISFACTION_THRESHOLD = 0.5
 	
 	

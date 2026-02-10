@@ -32,7 +32,7 @@ country_base_values = {
 
 	global_monthly_art_start_chance = 0.1
 	
-	global_peasant_enfranchisment = 0.25
+	global_peasant_enfranchisment = 0.2
 	
 	num_local_governors = 1
 
@@ -120,7 +120,7 @@ country_base_values = {
 	global_estate_satisfaction_recovery = 0.002
 	
 	
-	global_estate_max_tax = 0.30
+	global_estate_max_tax = 0.4
 	global_estate_min_tax = 0.0
 
 	land_morale_recovery = 0.05
@@ -131,14 +131,14 @@ country_base_values = {
 	monthly_inflation = -0.001
 
 	
-	sea_cost_on_distance_from_capital_when_maritime = 5
+	sea_cost_on_distance_from_capital_when_maritime = 4
 	sea_cost_on_distance_from_capital = 30
-	road_cost_on_distance_from_capital = 20
-	land_cost_on_distance_from_capital = 40
+	road_cost_on_distance_from_capital = 10
+	land_cost_on_distance_from_capital = 10
 	port_cost_distance_from_capital = 40
-	land_cost_going_upstream	= 12
-	land_cost_going_downstream	= 12
-	land_cost_on_frozen_water = 20
+	land_cost_going_upstream	= 6
+	land_cost_going_downstream	= 6
+	land_cost_on_frozen_water = 12
 	
 	global_migration_speed = 0.0001
 	
@@ -452,8 +452,6 @@ prestige = {
 
 num_non_rural_impact = {
 	scales_with = num_of_non_rural
-	
-	num_bailiffs = 1
 }
 
 
@@ -920,21 +918,22 @@ doom = {
 country_population = {
 	scales_with = total_population
 
-	expected_army_size = 0.0001
+	great_power_score = -0.03
+
 }
 
 
 country_control_scaled_population = {
 	scales_with = total_control_scaled_population
 
-	great_power_score = 0.01
+	great_power_score = 0.1
 }
 
 
 country_accepted_culture_population = {
 	scales_with = total_accepted_culture_population
 
-	expected_army_size = 0.002
+	expected_army_size = 0.005
 }
 
 
@@ -1017,7 +1016,6 @@ monthly_income_impact = {
 num_embraced_institutions = {
 	scales_with = num_embraced_institutions
 
-	great_power_score_exempt_from_forfeit = 10
 }
 
 
@@ -1387,7 +1385,7 @@ regular_army_size = {
 		value = regular_army_size
 	}
 	
-	great_power_score = 1.25
+	great_power_score = 1
 }
 regular_navy_size = {
 
@@ -1395,7 +1393,7 @@ regular_navy_size = {
 		value = regular_navy_size
 	}
 	
-	great_power_score = 0.5
+	great_power_score = 1
 }
 
 country_total_army_levy_size = {
@@ -1424,5 +1422,4 @@ used_fort_limit = {
 		value = used_fort_limit
 	}
 	
-	great_power_score = 0.3
 }

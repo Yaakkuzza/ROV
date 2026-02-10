@@ -17,7 +17,7 @@ lead_ore_dressing = {
 	
 	requires = manufactories_advance
 	
-	global_lead_output_modifier = 1.0
+	global_lead_output_modifier = 0.2
 }
 
 powerful_statues = {
@@ -26,9 +26,9 @@ powerful_statues = {
 	
 	requires = manufactories_advance
 	
-	global_copper_output_modifier = 0.25
-	global_tin_output_modifier = 0.1
-	global_stone_output_modifier = 0.1
+	global_copper_output_modifier = 0.2
+	global_tin_output_modifier = 0.2
+	global_stone_output_modifier = 0.2
 }
 
 ostentatious_clothing = {
@@ -37,8 +37,8 @@ ostentatious_clothing = {
 	
 	requires = lead_ore_dressing
 	
-	global_alum_output_modifier = 0.1
-	global_dyes_output_modifier = 0.1
+	global_alum_output_modifier = 0.2
+	global_dyes_output_modifier = 0.2
 }
 
 artists_advance_absolutism = {
@@ -116,13 +116,13 @@ lumber_improvements_absolutism = {
 	icon = rudimentary_coastal_ship_repair
 	age = age_5_absolutism
 	requires = rgo_size_advance_absolutism
-	global_lumber_output_modifier = 0.25
+	global_lumber_output_modifier = 0.2
 }
 
 coal_improvements_absolutism = {
 	age = age_5_absolutism
 	requires = rgo_size_advance_absolutism
-	global_coal_output_modifier = 0.33
+	global_coal_output_modifier = 0.2
 	unlock_building = improved_charcoal_maker
 }
 
@@ -167,7 +167,7 @@ coke_blast_furnace = {
 	
 	requires = newspapers_advance
 	
-	global_iron_output_modifier = 1.0
+	global_iron_output_modifier = 0.2
 }
 
 merchant_power_from_maritime_absolutism_advance = {
@@ -184,7 +184,7 @@ merchant_power_from_maritime_absolutism_advance = {
 hollander_beater = {
 	age = age_5_absolutism
 	
-	global_paper_output_modifier = 0.1
+	global_paper_output_modifier = 0.2
 	
 	requires = coke_blast_furnace
 }

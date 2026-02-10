@@ -1,4 +1,5 @@
-﻿saltpeter_guild = {
+﻿
+saltpeter_guild = {
 	is_foreign = no
 	pop_type = burghers
 	max_levels = guild_max_level
@@ -25,10 +26,10 @@
 	
 	unique_production_methods = {
 		saltpeter_guild_demands = {
-			pottery = 0.2
-			livestock = 1.0
+			pottery = 0.06
+			livestock = 0.36
 			produced = saltpeter
-			output = 1
+			output = 0.6
 			category = guild_input
 		}
 	}
@@ -36,6 +37,8 @@
 	custom_tags = { guild }
 	construction_demand = guild_construction
 }	
+
+
 
 saltpeter_workshop = {
 	is_foreign = no
@@ -59,10 +62,10 @@ saltpeter_workshop = {
 	
 	unique_production_methods = {
 		saltpeter_workshop_demands = {
-			pottery = 0.15
-			livestock = 0.9
+			pottery = 0.09
+			livestock = 0.54
 			produced = saltpeter
-			output = 1.1
+			output = 0.9
 			debug_max_profit = 0.6
 			category = workshop_input
 		}
@@ -73,6 +76,8 @@ saltpeter_workshop = {
 	custom_tags = { workshop }
 	construction_demand = workshop_construction
 }	
+
+
 
 putrefaction_works = {
 	is_foreign = no
@@ -95,10 +100,10 @@ putrefaction_works = {
 	
 	unique_production_methods = {
 		putrefaction_demands = {
-			pottery = 0.6
-			livestock = 1.2
+			pottery = 0.12
+			livestock = 0.72
 			produced = saltpeter
-			output = 2.0
+			output = 1.2
 			
 			debug_max_profit = 0.75
 			
@@ -110,6 +115,8 @@ putrefaction_works = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+
+
 
 putrefaction_mill = {
 	is_foreign = no
@@ -132,10 +139,10 @@ putrefaction_mill = {
 	
 	unique_production_methods = {
 		putrefaction_mill_demands = {
-			pottery = 1.1
-			livestock = 2.0
+			pottery = 0.15
+			livestock = 0.9
 			produced = saltpeter
-			output = 4.0
+			output = 1.5
 			
 			debug_max_profit = 1.0
 			
@@ -147,3 +154,5 @@ putrefaction_mill = {
 	custom_tags = { lategame_manufactory }
 	construction_demand = mill_construction
 }
+
+

@@ -17,7 +17,7 @@ nobles_rights_laws = {
 		country_modifier = {
 			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			global_nobles_estate_power = -0.1
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			nobles_estate_blocked_from_cabinet = yes
 		}
@@ -117,7 +117,7 @@ burghers_rights_laws = {
 		country_modifier = {
 			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			global_burghers_estate_power = -0.1
-			burghers_estate_max_tax = 0.1
+			burghers_estate_max_tax = 0.05
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			burghers_estate_blocked_from_cabinet = yes
 		}
@@ -203,7 +203,7 @@ clergy_rights_laws = {
 			potential_trigger = {
 				religion != religion:catholic
 			}
-			clergy_estate_max_tax = 0.1
+			clergy_estate_max_tax = 0.05
 		}
 		country_modifier = {
 			potential_trigger = {
@@ -229,7 +229,7 @@ clergy_rights_laws = {
 		country_modifier = {
 			clergy_estate_target_satisfaction = clergy_removed_from_state_policy
 			global_clergy_estate_power = -0.5
-			clergy_estate_max_tax = 1
+			clergy_estate_max_tax = 0.2
 			court_language_is_liturgical_language_importance_modifier = -1.0
 			clergy_estate_blocked_from_cabinet = yes
 		}

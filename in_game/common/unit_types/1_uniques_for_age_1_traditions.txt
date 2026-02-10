@@ -218,7 +218,7 @@ a_steppe_horde = {
 	copy_from = a_age_1_traditions_cavalry
 	light = yes
 
-	max_strength = 0.15
+	max_strength = 0.4
 	movement_speed = 1
 	initiative = 2
 	buildable = no
@@ -242,7 +242,7 @@ a_tribal_cavalry = {
 	copy_from = a_age_1_traditions_cavalry
 	light = yes
 
-	max_strength = 0.1
+	max_strength = 0.4
 	movement_speed = 1.0
 	initiative = 2
 	buildable = no
@@ -322,7 +322,7 @@ a_catalan_crossbowmen = {
 	
 	buildable = yes
 
-	max_strength = 0.75
+	max_strength = 0.5
 
 	maintenance_demand =  archer_infantry_maintenance
 	construction_demand = archer_infantry_construction
@@ -508,7 +508,7 @@ a_early_paik_infantry = {
 	copy_from = a_age_1_traditions_infantry
 	upgrades_to = a_paik_infantry
 	
-	max_strength = 0.1
+	max_strength = 0.2
 	buildable = yes
 	initiative = 2
 	strength_damage_taken = -0.10
@@ -582,7 +582,7 @@ a_varangians = {
 
 	copy_from = a_age_1_traditions_infantry
 	
-	max_strength = 0.75	
+	max_strength = 0.5
 	strength_damage_done = 0.2
 	morale_damage_done = 0.2
 

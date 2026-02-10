@@ -17,11 +17,11 @@
 	
 	unique_production_methods = {
 		porcelain_guild_maintenance = {
-			clay = 2.5
-			coal = 0.5
-			tools = 0.05
+			clay = 0.8
+			coal = 0.04
+			tools = 0.04
 			produced = porcelain
-			output = 1
+			output = 0.4
 			
 			category = guild_input
 		}
@@ -52,12 +52,12 @@ porcelain_manufactory = {
 		porcelain_manufactory_maintenance = {
 			
 			
-			clay = 4
-			coal = 0.5
-			tools = 0.25
+			clay = 1.2
+			coal = 0.06
+			tools = 0.06
 
 			produced = porcelain
-			output = 2
+			output = 0.6
 			
 			debug_max_profit = 0.6
 			
@@ -71,3 +71,9 @@ porcelain_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+
+
+
+
+
+

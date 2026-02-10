@@ -19,12 +19,12 @@
 		
 		cannon_maker_lumber_maintenance = {			
 			# Wood
-			lumber = 0.12
-			iron = 0.045
-			tools = 0.02
+			lumber = 0.2
+			iron = 0.05
+			tools = 0.05
 			
 			produced = cannons
-			output = 0.1
+			output = 0.27
 			
 			category = guild_input
 
@@ -34,23 +34,23 @@
 		
 		cannon_maker_bronze_maintenance = {			
 			# Bronze
-			copper = 0.5
-			tin = 0.1
-			tools = 0.5
+			copper = 0.1
+			tin = 0.03
+			tools = 0.08
 			
 			produced = cannons
-			output = 1
+			output = 0.3
 			
 			category = guild_input
 		}
 		
 		cannon_maker_iron_maintenance = {			
 			# Wrought Iron
-			iron = 0.6
-			tools = 0.5
+			iron = 0.15
+			tools = 0.05
 			
 			produced = cannons
-			output = 1
+			output = 0.3
 			
 			category = guild_input
 		}
@@ -61,23 +61,23 @@
 			stone = 0.1
 			saltpeter = 0.1
 			produced = cannons
-			output = 0.087
+			output = 0.135
 			
 			category = guild_input
 		}
 		cannon_maker_ammunition_lead_maintenance = {
-			lead = 0.1
-			saltpeter = 0.1
+			lead = 0.06
+			saltpeter = 0.09
 			produced = cannons
-			output = 0.12
+			output = 0.15
 			
 			category = guild_input
 		}
 		cannon_maker_ammunition_iron_maintenance = {
-			iron = 0.1
-			saltpeter = 0.1
+			iron = 0.04
+			saltpeter = 0.09
 			produced = cannons
-			output = 0.16
+			output = 0.15
 			
 			category = guild_input
 		}
@@ -87,6 +87,7 @@
 	construction_demand = guild_construction
 	
 }
+
 
 cannon_workshop = {
 	is_foreign = no
@@ -110,12 +111,12 @@ cannon_workshop = {
 
 		cannon_workshop_bronze_maintenance = {			
 			# Bronze
-			copper = 0.8
-			tin = 0.2
-			tools = 0.1
+			copper = 0.2
+			tin = 0.03
+			tools = 0.08
 			
 			produced = cannons
-			output = 1.1
+			output = 0.45
 			
 			debug_max_profit = 0.5
 			
@@ -124,14 +125,14 @@ cannon_workshop = {
 		
 		cannon_workshop_iron_maintenance = {			
 			# Wrought Iron
-			iron = 0.9
+			iron = 0.2
 			tools = 0.1
 			
 			
 			
 			
 			produced = cannons
-			output = 1.1
+			output = 0.45
 			
 			debug_max_profit = 0.5
 			
@@ -144,9 +145,9 @@ cannon_workshop = {
 	unique_production_methods = {
 		cannon_workshop_ammunition_stone_maintenance = {
 			stone = 0.1
-			saltpeter = 0.1
+			saltpeter = 0.15
 			produced = cannons
-			output = 0.1
+			output = 0.2
 			
 			
 			debug_max_profit = 0.5
@@ -154,10 +155,10 @@ cannon_workshop = {
 			category = workshop_input
 		}
 		cannon_workshop_ammunition_lead_maintenance = {
-			lead = 0.1
-			saltpeter = 0.1
+			lead = 0.06
+			saltpeter = 0.135
 			produced = cannons
-			output = 0.15
+			output = 0.225
 			
 			
 			debug_max_profit = 0.5
@@ -165,10 +166,10 @@ cannon_workshop = {
 			category = workshop_input
 		}
 		cannon_workshop_ammunition_iron_maintenance = {
-			iron = 0.12
-			saltpeter = 0.1
+			iron = 0.04
+			saltpeter = 0.135
 			produced = cannons
-			output = 0.2
+			output = 0.225
 			
 			debug_max_profit = 0.5
 			
@@ -181,6 +182,8 @@ cannon_workshop = {
 	construction_demand = workshop_construction
 	
 }
+
+
 
 cannon_foundry = {
 	is_foreign = no
@@ -203,18 +206,18 @@ cannon_foundry = {
 
 	unique_production_methods = {
 		cannon_foundry_maintenance = {
-			tools = 0.4
-			lead = 0.3
+			tools = 0.1
+			lead = 0.1
 			
 			#Gunpowder
-			saltpeter = 0.5
+			saltpeter = 0.15
 			
 			#Bronze
-			copper = 0.5
-			tin = 0.25
+			copper = 0.1
+			tin = 0.05
 			
 			produced = cannons
-			output = 2.0
+			output = 0.6
 			
 			debug_max_profit = 0.75
 			category = manufactory_input
@@ -246,16 +249,16 @@ cannons_factory = {
 	unique_production_methods = {
 		
 		gun_factory_maintenance = {
-			steel = 1.5
+			steel = 0.26
 			
 			lead = 0.3 #Ammunition
 			
 			#Gunpowder
-			saltpeter = 0.5
+			saltpeter = 0.1
 			
 			
 			produced = cannons
-			output = 4
+			output = 0.75
 			
 			debug_max_profit = 1.0
 			
@@ -267,3 +270,4 @@ cannons_factory = {
 	custom_tags = { lategame_manufactory }
 	construction_demand = mill_construction
 }
+

@@ -468,7 +468,7 @@ dahsala_system = {
 
 	zabiti = {
 		country_modifier = {
-			peasants_estate_max_tax = 0.1
+			peasants_estate_max_tax = 0.05
 			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			global_peasants_food_consumption = -0.1
 		}
@@ -490,7 +490,7 @@ dahsala_system = {
 	
 	nasaq = {
 		country_modifier = {
-			peasants_estate_max_tax = 0.1
+			peasants_estate_max_tax = 0.05
 			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		}
 		estate_preferences = {

@@ -1,8 +1,7 @@
 ﻿dock = {
 	is_foreign = no
-	max_levels = 1
+	max_levels = 5
 	pop_type = soldiers
-	forbidden_for_estates = yes
 	
 	category = naval_category
 	
@@ -20,9 +19,9 @@
 	
 	unique_production_methods = {
 		dock_maintenance = {
-			tar = 0.2
-			naval_supplies = 0.1
-			tools = 0.2
+			tar = 0.25
+			naval_supplies = 1.25
+			tools = 0.05
 			lumber = 0.2
 			category = building_maintenance
 		}
@@ -34,19 +33,19 @@
 
 	modifier = {
 		max_ships_built_at_same_time = 1
-		local_sailors = 0.016
+		local_sailors = 0.005
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.1
-		local_repair_speed = 0.02
+		harbor_suitability = 0.02
 
 	}
 }
 
+
+
 dry_dock = {
 	is_foreign = no
-	max_levels = 1
+	max_levels = 5
 	pop_type = soldiers
-	forbidden_for_estates = yes
 	
 	category = naval_category
 	obsolete = dock
@@ -68,9 +67,9 @@ dry_dock = {
 	
 	unique_production_methods = {
 		dry_dock_maintenance = {
-			tar = 0.4
-			naval_supplies = 0.2
-			tools = 0.4
+			tar = 0.5
+			naval_supplies = 2.5
+			tools = 0.01
 			lumber = 0.4
 			category = building_maintenance
 		}
@@ -83,18 +82,18 @@ dry_dock = {
 
 	modifier = {
 		max_ships_built_at_same_time = 2
-		local_sailors = 0.032
+		local_sailors = 0.01
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.15
-		local_repair_speed = 0.04
+		harbor_suitability = 0.03
 	}
 }
 
+
+
 shipyard = {
 	is_foreign = no
-	max_levels = 1
+	max_levels = 5
 	pop_type = soldiers
-	forbidden_for_estates = yes
 	
 	category = naval_category
 	obsolete = dry_dock
@@ -116,9 +115,9 @@ shipyard = {
 	
 	unique_production_methods = {
 		shipyard_maintenance = {
-			tar = 0.8
-			naval_supplies = 0.4
-			tools = 0.8
+			tar = 1
+			naval_supplies = 5
+			tools = 0.2
 			lumber = 0.8
 			category = building_maintenance
 		}
@@ -131,19 +130,16 @@ shipyard = {
 
 	modifier = {
 		max_ships_built_at_same_time = 4
-		local_sailors = 0.064
+		local_sailors = 0.02
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.2
-		local_repair_speed = 0.06
+		harbor_suitability = 0.04
 	}
 }
 
 grand_shipyard = {
 	is_foreign = no
-	max_levels = 1
+	max_levels = 5
 	pop_type = soldiers
-	forbidden_for_estates = yes
-	
 	category = naval_category
 	
 	obsolete = shipyard
@@ -164,9 +160,9 @@ grand_shipyard = {
 	
 	unique_production_methods = {
 		grand_shipyard_maintenance = {
-			tar = 1.6
-			naval_supplies = 0.8
-			tools = 1.6
+			tar = 2
+			naval_supplies = 10
+			tools = 0.4
 			lumber = 1.6
 			category = building_maintenance
 		}
@@ -179,10 +175,9 @@ grand_shipyard = {
 
 	modifier = {
 		max_ships_built_at_same_time = 8
-		local_sailors = 0.125
+		local_sailors = 0.04
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.25
-		local_repair_speed = 0.08
+		harbor_suitability = 0.05
 	}
 }
 
@@ -190,8 +185,6 @@ naval_base = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = soldiers
-	forbidden_for_estates = yes
-
 	category = naval_category
 	
 	obsolete = grand_shipyard
@@ -212,10 +205,10 @@ naval_base = {
 	
 	unique_production_methods = {
 		naval_base_maintenance = {
-			tar = 3.0
-			naval_supplies = 1.5
-			tools = 3.0
-			lumber = 3.0
+			tar = 4
+			naval_supplies = 20
+			tools = 0.8
+			lumber = 3.2
 			category = building_maintenance
 		}
 
@@ -227,20 +220,19 @@ naval_base = {
 
 	modifier = {
 		max_ships_built_at_same_time = 12
-		local_sailors = 0.2
+		local_sailors = 0.08
 		can_build_ships_in_this_location = yes
-		harbor_suitability = 0.3
-		local_navy_attrition = -1
-		local_repair_speed = 0.1
+		harbor_suitability = 0.06
+		local_navy_attrition = -0.2
 	}
 }
+
 
 protected_harbor = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = laborers
 	category = naval_category
-	forbidden_for_estates = yes
 	
 	
 	employment_size = dock_employment
@@ -273,7 +265,6 @@ protected_harbor = {
 	modifier = {
 		local_navy_attrition = -5
 		harbor_suitability = 0.1
-		local_repair_speed = 0.025
 	}
 
 

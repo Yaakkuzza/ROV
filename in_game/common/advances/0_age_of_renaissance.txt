@@ -30,7 +30,7 @@ renaissance_sculptures  = {
 
 	requires = patron_of_art
 
-	global_stone_output_modifier = 0.1
+	global_stone_output_modifier = 0.2
 }
 
 renaissance_thought  = {

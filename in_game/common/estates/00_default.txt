@@ -18,29 +18,22 @@
 
 	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
 	high_power = {
-		country_cabinet_efficiency = 1.0
-		power_projection = 5
-		building_upkeep_costs = -1.0
-		revoke_privilege_cost_modifier = -1
-		court_spending_cost = -0.05
-		change_policy_cost_modifier = -0.5
-		global_estate_target_satisfaction = crown_power_estate_satisfaction_impact
 	}
 	
 	
 	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
 	low_power = {
-		country_cabinet_efficiency = -1.0
-		estate_building_destruction_satisfaction_impact = -0.66
-		change_policy_cost_modifier = 0.5
-		tax_income_efficiency = -1.0
-		diplomatic_reputation = -2
-		building_upkeep_costs = 2.0
+		estate_building_destruction_satisfaction_impact = -1
 	}
 	
 	power = {
+		building_upkeep_costs = -1
 		parliament_base_support = 0.5
 		trade_income = 1.0
+		power_projection = 10
+		revoke_privilege_cost_modifier = -0.5
+		change_policy_cost_modifier = -0.5
+		global_estate_target_satisfaction = 0.2
 	}
 
 	ruler = yes
@@ -66,22 +59,15 @@ nobles_estate = {
 
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		counter_espionage = 0.2
-		monthly_prestige = 0.2
+		monthly_towards_aristocracy = 0.5
 	}
-	
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		nobles_estate_max_tax = -1.0
+
+	power = {
+		nobles_estate_max_tax = -0.4
 		levy_combat_efficiency_modifier = 1.0
 		fort_limit_modifier = 1.0
-		monthly_towards_aristocracy = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		nobles_estate_max_tax = 0.5
+		counter_espionage = 0.5
+		monthly_prestige = 0.5
 	}
 	
 	opinion = {
@@ -272,21 +258,15 @@ clergy_estate = {
 
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		research_speed_modifier = 0.5
-		diplomatic_reputation = 2
+		monthly_towards_spiritualist = 0.5
 	}	
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		clergy_estate_max_tax = -0.5
+
+	power = {
+		clergy_estate_max_tax = -0.4
 		global_pop_conversion_speed_modifier = 2.0
 		stability_cost = -0.5
-		monthly_towards_spiritualist = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		clergy_estate_max_tax = 0.25
+		research_speed_modifier = 0.5
+		diplomatic_reputation = 2
 	}
 	
 	opinion = {
@@ -465,21 +445,15 @@ burghers_estate = {
 	
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		global_merchant_power = 0.5
-		global_production_efficiency = medium_production_efficiency_bonus
+		monthly_towards_plutocracy = 0.5
 	}
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		burghers_estate_max_tax = -0.5
+	
+	power = {
+		burghers_estate_max_tax = -0.4
 		global_merchant_capacity_modifier = 1.0
 		navy_maintenance_cost = -0.33
-		monthly_towards_plutocracy = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		burghers_estate_max_tax = 0.5
+		global_merchant_power = 0.5
+		global_production_efficiency = 0.1
 	}
 	
 	opinion = {
@@ -615,22 +589,16 @@ peasants_estate = {
 	
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
+		monthly_towards_communalism = 0.5
+	}
+
+	power = {
+		peasants_estate_max_tax = -0.4
+		food_purchase_cost = -0.5
 		stability_cost = -0.2
 		global_monthly_food_modifier = 0.25
 		levy_recovery_modifier = 0.5
-	}
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		peasants_estate_max_tax = -0.5
-		food_purchase_cost = -0.5
 		global_estate_target_satisfaction = medium_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		peasants_estate_max_tax = 0.5
 	}
 
 	opinion = {
@@ -757,20 +725,13 @@ dhimmi_estate = {
 	
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		global_raw_material_output = 0.05
-		global_monthly_food_modifier = 0.10
+		monthly_towards_humanist = 0.5
 	}
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		dhimmi_estate_max_tax = -0.3
-		monthly_towards_humanist = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		dhimmi_estate_max_tax = 0.5
-		pop_join_rebel_threshold = -0.1
+
+	power = {
+		dhimmi_estate_max_tax = -0.4
+		global_raw_material_output = 0.1
+		global_monthly_food_modifier = 0.2
 	}
 
 	opinion = {
@@ -798,20 +759,13 @@ tribes_estate = {
 	
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		global_raw_material_output = 0.05
-		global_monthly_food_modifier = 0.10
+		monthly_towards_humanist = 0.5
 	}
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		global_raw_material_output = 0.1
-		tribes_estate_max_tax = -0.3
-		monthly_towards_traditional_economy = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		tribes_estate_max_tax = 0.5
+
+	power = {
+		tribes_estate_max_tax = -0.4
+		global_raw_material_output = 0.3
+		global_monthly_food_modifier = 0.2
 	}
 
 	opinion = {
@@ -924,22 +878,14 @@ cossacks_estate = {
 	
 	#multiplied with (satisfaction - LOW_SATISFACTION_THRESHOLD)
 	satisfaction = {
-		monthly_war_exhaustion = -0.05
-		global_monthly_food_modifier = 0.10
+		monthly_towards_individualism = 0.5
 	}
-	#multiplied with (relative_power - LOW_POWER_THRESHOLD) if > LOW_POWER_THRESHOLD
-	high_power = {
-		cossacks_estate_max_tax = -0.3
-		military_tactics = 0.1
-		
-		monthly_towards_offensive = societal_value_significant_monthly_move
-	}
-	
-	
-	#multiplied with -(relative_power - LOW_POWER_THRESHOLD) if < LOW_POWER_THRESHOLD
-	low_power = {
-		cossacks_estate_max_tax = 0.5
-		pop_join_rebel_threshold = -0.1
+
+	power = {
+		cossacks_estate_max_tax = -0.4
+		military_tactics = 0.2
+		monthly_war_exhaustion = -0.1
+		global_monthly_food_modifier = 0.2
 	}
 
 	opinion = {

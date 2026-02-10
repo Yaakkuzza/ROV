@@ -16,7 +16,6 @@ glass_guild = {
 	
 	
 	location_potential = {
-		is_produced_in_location_market = goods:sand
 	}
 	
 
@@ -25,21 +24,21 @@ glass_guild = {
 	unique_production_methods = {
 		glass_guild_maintenance = {
 			lumber = 0.1
-			sand = 1.0
-			tools = 0.2
+			sand = 0.6
+			tools = 0.05
 			produced = glass
-			output = 0.75
+			output = 0.54
 		
 			category = guild_input
 		}
 		metal_glass_guild_maintenance = {
-			lumber = 0.15
-			sand = 1.0
-			tools = 0.2
+			lumber = 0.06
+			sand = 0.44
+			tools = 0.05
 			alum = 0.02
 			lead = 0.04
 			produced = glass
-			output = 1
+			output = 0.6
 			
 			debug_max_profit = 0.4		#ok, with better, as it requires more.
 		
@@ -52,6 +51,7 @@ glass_guild = {
 	}
 	custom_tags = { guild }
 }
+
 
 ###########################################
 glass_workshop = {
@@ -75,13 +75,13 @@ glass_workshop = {
 
 	unique_production_methods = {
 		metal_glass_workshop_maintenance = {
-			lumber = 0.15
-			sand = 1.0
-			tools = 0.2
-			alum = 0.02
-			lead = 0.04
+			lumber = 0.09
+			sand = 0.66
+			tools = 0.075
+			alum = 0.03
+			lead = 0.06
 			produced = glass
-			output = 1.1
+			output = 0.9
 			
 			debug_max_profit = 0.6
 		
@@ -115,15 +115,15 @@ glassworks = {
 	
 	unique_production_methods = {
 		glassworks_maintenance = {
-			lumber = 0.2
-			sand = 2.0
+			lumber = 0.09
+			sand = 0.8
 			stone = 0.1
-			tools = 0.3
-			coal = 0.2
-			alum = 0.02
+			tools = 0.075
+			coal = 0.1
+			alum = 0.03
 			
 			produced = glass
-			output = 2
+			output = 1.2
 			
 			debug_max_profit = 0.75
 			
@@ -157,15 +157,15 @@ glass_mill = {
 	
 	unique_production_methods = {
 		glassmill_maintenance = {
-			lumber = 0.2
-			sand = 3.0
+			lumber = 0.1
+			sand = 1
 			stone = 0.1
-			tools = 0.5
-			coal = 0.3
-			alum = 0.05
+			tools = 0.1
+			coal = 0.14
+			alum = 0.04
 			
 			produced = glass
-			output = 4
+			output = 1.5
 			
 			debug_max_profit = 1.0
 			

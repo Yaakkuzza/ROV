@@ -18,11 +18,11 @@ scriptorium = {
 	
 	unique_production_methods = {
 		scriptorium_maintenance = {
-			dyes = 0.1
-			paper = 0.3
-			lumber = 0.2
+			dyes = 0.02
+			paper = 0.2
+			lumber = 0.08
 			produced = books
-			output = 0.3
+			output = 0.24
 		
 			category = guild_input
 		}
@@ -31,6 +31,9 @@ scriptorium = {
 	construction_demand = guild_construction
 
 }
+
+
+
 
 printing_press_shop = {
 	is_foreign = no
@@ -53,13 +56,13 @@ printing_press_shop = {
 	
 	unique_production_methods = {
 		printing_press_maintenance = {
-			lead = 0.25 #Types
-			paper = 1.0
-			tools = 0.2
-			lumber = 0.4
+			lead = 0.05 #Types
+			paper = 0.25
+			tools = 0.05
+			lumber = 0.1
 			
 			produced = books
-			output = 1
+			output = 0.36
 			
 			debug_max_profit = 0.6
 			
@@ -71,6 +74,11 @@ printing_press_shop = {
 
 	construction_demand = workshop_construction
 }
+
+
+
+
+
 
 printing_manufactory = {
 	is_foreign = no
@@ -93,13 +101,13 @@ printing_manufactory = {
 	
 	unique_production_methods = {
 		printing_manufactory_maintenance = {
-			lead = 0.4 #Types
-			paper = 2.0
-			tools = 0.5
-			lumber = 0.5
+			lead = 0.075 #Types
+			paper = 0.32
+			tools = 0.075
+			lumber = 0.12
 			
 			produced = books
-			output = 2
+			output = 0.48
 			
 			debug_max_profit = 0.75
 			
@@ -111,6 +119,8 @@ printing_manufactory = {
 
 	construction_demand = manufactory_construction
 }
+
+
 
 printing_mill = {
 	is_foreign = no
@@ -133,13 +143,13 @@ printing_mill = {
 	
 	unique_production_methods = {
 		printing_mill_maintenance = {
-			lead = 0.5 #Types
-			paper = 3.5
-			tools = 1.0
-			lumber = 1.0
+			lead = 0.1 #Types
+			paper = 0.39
+			tools = 0.1
+			lumber = 0.14
 			
 			produced = books
-			output = 4
+			output = 0.6
 			
 			debug_max_profit = 1.0
 			

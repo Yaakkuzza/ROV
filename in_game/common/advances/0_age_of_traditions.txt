@@ -9,7 +9,7 @@ written_alphabet = {
 	
 	
 	global_max_literacy = 5
-	global_monthly_literacy = 0.01
+	global_monthly_literacy = 0.05
 	
 	starting_technology_level = 2
 	
@@ -523,7 +523,7 @@ educated_bureaucrats = {
 	icon = scholasticism
 	requires = meritocracy_advance
 
-	global_monthly_literacy = 0.01
+	global_monthly_literacy = 0.05
 }
 
 efficient_bureaucracy = {

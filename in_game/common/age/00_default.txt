@@ -48,7 +48,7 @@ age_2_renaissance = {
 	}
 	modifier = {
 		expected_army_size_modifier = 1.0
-		levy_maintenance_modifier = 0.1
+		levy_maintenance_modifier = 0.2
 		
 		
 		lack_of_control_impact_on_warscore = -0.2
@@ -96,7 +96,7 @@ age_3_discovery = {
 
 	modifier = {
 		expected_army_size_modifier = 2.0
-		levy_maintenance_modifier = 0.25
+		levy_maintenance_modifier = 0.4
 		
 		
 		lack_of_control_impact_on_warscore = -0.4
@@ -145,7 +145,7 @@ age_4_reformation = {
 
 	modifier = {
 		expected_army_size_modifier = 4.0
-		levy_maintenance_modifier = 0.5
+		levy_maintenance_modifier = 0.6
 		
 		lack_of_control_impact_on_warscore = -0.6
 		
@@ -198,7 +198,7 @@ age_5_absolutism = {
 	
 	modifier = {
 		expected_army_size_modifier = 8.0
-		levy_maintenance_modifier = 0.75
+		levy_maintenance_modifier = 0.8
 		
 		lack_of_control_impact_on_warscore = -0.8
 		

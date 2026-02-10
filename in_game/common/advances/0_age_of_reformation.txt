@@ -92,7 +92,7 @@ pan_amalgamation_advance = {
 	age = age_4_reformation
 	
 	mercury_patio_max_level = 1
-	global_mercury_output_modifier = 0.1
+	global_mercury_output_modifier = 0.2
 
 	requires = pharmacology_advance
 }
@@ -127,7 +127,7 @@ lumber_improvements_reformation = {
 	icon = rudimentary_coastal_ship_repair
 	age = age_4_reformation
 	requires = construction_speed_reformation
-	global_lumber_output_modifier = 0.25
+	global_lumber_output_modifier = 0.2
 }
 
 ###############################
@@ -156,7 +156,7 @@ bole_smelting = {
 	
 	requires = global_trade_advance
 	
-	global_lead_output_modifier = 1.0
+	global_lead_output_modifier = 0.2
 }
 
 slitting_mills = {
@@ -164,7 +164,7 @@ slitting_mills = {
 	
 	requires = bole_smelting
 	
-	global_iron_output_modifier = 0.66
+	global_iron_output_modifier = 0.2
 }
 
 maritime_advance_age_4 = {
@@ -297,7 +297,7 @@ shared_products_procedures = {
 	age = age_4_reformation
 	icon = zmw_merchant_taxes
 	
-	global_alum_output_modifier = 0.1
+	global_alum_output_modifier = 0.2
 
 	requires = slitting_mills
 }

@@ -2,9 +2,8 @@
 	left_modifier = {
 		global_crown_estate_power = 0.5
 		global_distance_from_capital_speed_propagation = 0.2
-		
-		subject_loyalty = -20
-		annexation_speed_modifier = 0.33
+
+		annexation_speed_modifier = 0.2
 		
 		control_importance_modifier = 0.2
 
@@ -14,7 +13,7 @@
 		global_estate_satisfaction_recovery = 0.002
 
 		subject_loyalty = 30
-		annexation_speed_modifier = -0.33
+		annexation_speed_modifier = -0.2
 		
 		control_importance_modifier = -0.1
 	}
@@ -25,12 +24,12 @@
 ##############################################
 traditionalist_vs_innovative = {
 	left_modifier = {
-		global_estate_target_satisfaction = small_permanent_target_satisfaction
 		cultural_tradition_modifier = 1.0
 
 		
 		stability_cost = -0.20
-		embrace_institution_cost_modifier = 2.0
+		global_manpower_modifier = 0.2
+		global_sailors_modifier = 0.2
 		
 		language_change_threshold_modifier = 1
 		societal_value_importance_modifier = 0.2
@@ -96,6 +95,7 @@ aristocracy_vs_plutocracy = { #
 	right_modifier = {
 		trade_efficiency = small_trade_efficiency_bonus
 		global_burghers_estate_power = 0.50
+		global_production_efficiency = 0.1
 		
 		court_spending_cost  = -0.02
 		court_language_is_market_language_importance_modifier = 0.5
@@ -107,25 +107,21 @@ aristocracy_vs_plutocracy = { #
 ##############################################
 serfdom_vs_free_subjects = {
 	left_modifier = {
-		global_raw_material_output = 0.10
-		levy_recovery_modifier = 0.5
+		global_raw_material_output = 0.2
 		
-		levy_combat_efficiency_modifier = -0.1
-		global_peasant_enfranchisment = -0.33
-		
-		nobles_estate_target_satisfaction = large_permanent_target_satisfaction
+		global_peasants_food_consumption = -0.2
+		global_laborers_food_consumption = -0.2
+		global_peasant_enfranchisment = -0.2
 		
 		control_importance_modifier = 0.1
 		court_language_is_common_language_importance_modifier = -0.25
 	}
 	right_modifier = {
-		global_monthly_prosperity = 0.0025
-		global_pop_promotion_speed_modifier = 1.0
+		global_monthly_prosperity = 0.002
+		global_pop_promotion_speed_modifier = 0.5
 		
-		peasants_estate_target_satisfaction = large_permanent_target_satisfaction
-		
-		levy_combat_efficiency_modifier = 0.25
-		global_peasant_enfranchisment = 0.33
+		global_peasant_enfranchisment = 0.2
+		peasants_estate_max_tax = -0.1
 		
 		control_importance_modifier = -0.05
 		court_language_is_common_language_importance_modifier = 0.25
@@ -260,8 +256,6 @@ offensive_vs_defensive = {
 land_vs_naval = {
 	left_modifier = {
 		land_cost_on_distance_from_capital_speed_propagation = 0.2
-		global_max_rgo_size_modifier = 0.05
-
 		trade_sea_movement_cost_modifier = 0.5		
 		trade_land_movement_cost_modifier = -0.1
 		
@@ -269,8 +263,8 @@ land_vs_naval = {
 		bias_for_administrative_policies = 25
 	}
 	right_modifier = {
-		sea_cost_on_distance_from_capital_when_maritime = -1
-		global_maritime_presence_modifier = 0.3
+		global_distance_from_capital_speed_propagation = 0.1
+		global_maritime_presence_modifier = 0.5
 		
 		trade_sea_movement_cost_modifier = -0.10		
 		trade_land_movement_cost_modifier = 0.5
@@ -285,10 +279,9 @@ land_vs_naval = {
 ##############################################
 capital_economy_vs_traditional_economy = {
 	left_modifier = {
-		global_production_efficiency = huge_production_efficiency_bonus
-		bank_interest = -0.03
+		global_production_efficiency = 0.1
+		bank_interest = -0.05
 	
-		global_monthly_food_modifier = -0.2
 		global_build_buildings_cost = -0.1
 		
 		court_language_is_market_language_importance_modifier = 0.5
@@ -296,10 +289,9 @@ capital_economy_vs_traditional_economy = {
 	}
 	right_modifier = {
 		global_raw_material_output = 0.2
-		global_population_capacity_modifier = 0.25
+		global_population_capacity_modifier = 0.2
 		
 		global_monthly_food_modifier = 0.2
-		global_build_buildings_cost = 0.1
 		court_language_is_market_language_importance_modifier = -0.5
 		bias_for_capitalist_policies = -100
 	}
@@ -316,10 +308,9 @@ individualism_vs_communalism = {
 		societal_value_importance_modifier = -0.05
 	}
 	right_modifier = {
-		pop_join_rebel_threshold = -0.05
-		revoke_privilege_cost_modifier = -0.5
+		pop_join_rebel_threshold = -0.1
 		
-		global_estate_target_satisfaction = small_permanent_target_satisfaction
+		global_estate_target_satisfaction = medium_permanent_target_satisfaction
 		global_migration_speed_modifier = -0.5
 		
 		societal_value_importance_modifier = 0.05

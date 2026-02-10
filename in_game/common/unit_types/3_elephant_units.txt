@@ -2,12 +2,12 @@
 	is_special = yes
 	category = army_auxiliary	
 	copy_from = a_age_5_absolutism_auxiliary	#Yes, they are intentionally the strongest auxilliary unit until the age of Age of Absolutism
-	combat_power = 4
+	combat_power = 5
 	location_potential = {
 		market ?= { is_produced_in_market = goods:elephants }
 	}	
 	#root = location. Checks location_potential first so don't need that scripting in
-	max_strength = 0.05
+	max_strength = 0.15
 	food_storage_per_strength = 200
 	mercenaries_per_location = {
 		pop_type = nobles
@@ -34,7 +34,7 @@ a_indian_elephant_cavalry = {
 	category = army_cavalry	
 	copy_from = a_age_2_renaissance_cavalry
 	# some terrain and climate impacts
-	max_strength = 0.05
+	max_strength = 0.15
 	impact = {
 		jungle = -0.25
 	}
@@ -68,7 +68,7 @@ a_orissan_elephant_cavalry = {
 	category = army_cavalry
 	copy_from = a_age_2_renaissance_cavalry
 	strength_damage_taken = -0.10
-	max_strength = 0.05
+	max_strength = 0.15
 	# some terrain and climate impacts
 	impact = { jungle = -0.25 }
 	#root = location
@@ -92,7 +92,7 @@ a_bengali_elephant_cavalry = {
 	copy_from = a_age_2_renaissance_cavalry
 	# some terrain and climate impacts
 	food_storage_per_strength = 1
-	max_strength = 0.05
+	max_strength = 0.15
 	impact = { jungle = -0.25 }
 	#root = location
 	location_potential = {
@@ -157,7 +157,7 @@ a_khmer_ballista_elephant_infantry = {
 	category = army_infantry
 	copy_from = a_age_2_renaissance_infantry
 	# some terrain and climate impacts
-	max_strength = 0.25
+	max_strength = 0.2
 	impact = { jungle = -0.25 }
 	initiative = 2
 	combat_speed = -0.05

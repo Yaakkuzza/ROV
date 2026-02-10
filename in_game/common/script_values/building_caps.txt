@@ -6,12 +6,7 @@
 	add = {
 		desc = "BUILDING_LEVEL_DEVELOPMENT"
 		value = development
-		multiply = 0.1
-	}
-	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.05
+		multiply = 0.5
 	}
 	if = {
 		limit = {
@@ -58,12 +53,7 @@ workshop_max_level = {
 	add = {
 		desc = "BUILDING_LEVEL_DEVELOPMENT"
 		value = development
-		multiply = 0.25
-	}
-	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.05
+		multiply = 0.5
 	}
 	if = {
 		limit = {
@@ -71,7 +61,7 @@ workshop_max_level = {
 		}
 		add = {
 			desc = "BUILDING_LEVEL_IS_CITY"
-			value = 10
+			value = 5
 		}
 	}
 }
@@ -87,18 +77,13 @@ manufactory_max_level = {
 		value = development
 		multiply = 0.5
 	}
-	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.1
-	}
 	if = {
 		limit = {
 			location_rank = location_rank:city
 		}
 		add = {
 			desc = "BUILDING_LEVEL_IS_CITY"
-			value = 20
+			value = 5
 		}
 	}
 }
@@ -112,12 +97,7 @@ market_max_level = {
 	add = {
 		desc = "BUILDING_LEVEL_DEVELOPMENT"
 		value = development
-		multiply = 0.1
-	}
-	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.05
+		multiply = 0.2
 	}
 	if = {
 		limit = {
@@ -140,12 +120,7 @@ mills_max_level = {
 	add = {
 		desc = "BUILDING_LEVEL_DEVELOPMENT"
 		value = development
-		multiply = 1
-	}
-	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.25
+		multiply = 0.5
 	}
 	if = {
 		limit = {
@@ -153,7 +128,7 @@ mills_max_level = {
 		}
 		add = {
 			desc = "BUILDING_LEVEL_IS_CITY"
-			value = 25
+			value = 5
 		}
 	}
 }
@@ -207,14 +182,14 @@ polders_max_level = {
 		add = {
 			desc = "BUILDING_LEVEL_DEVELOPMENT"
 			value = development
-			multiply = 0.2
+			multiply = 0.5
 		}
 	}
 	else = {
 		add = {
 			desc = "BUILDING_LEVEL_DEVELOPMENT"
 			value = development
-			multiply = 0.1
+			multiply = 0.25
 		}
 	}
 }
@@ -225,9 +200,9 @@ irrigant_cap = {
 		value = 2
 	}
 	add = {
-		desc = "BUILDING_LEVEL_DEVELOPMENT"
-		value = development
-		multiply = 0.2
+		desc = "BUILDING_LEVEL_POPULATION"
+		value = population
+		multiply = 0.05
 	}
 	if = {
 		limit = {
@@ -259,13 +234,14 @@ bund_cap = {
 
 manpower_max_level = {
 	add = {
-		desc = "BUILDING_LEVEL_BASE"
-		value = 1
-	}
-	add = {
 		desc = "BUILDING_LEVEL_POPULATION"
 		value = population
 		multiply = 0.05
+	}
+	add = {
+		desc = "BUILDING_LEVEL_DEVELOPMENT"
+		value = development
+		multiply = 0.2
 	}
 }
 
@@ -277,7 +253,7 @@ plantation_cap = {
 	add = {
 		desc = "BUILDING_LEVEL_RGO_MAX"
 		value = max_rgo_workers
-		multiply = 2.0
+		multiply = 2
 	}
 }
 
@@ -288,27 +264,9 @@ plantation_cap = {
 
 rural_building_cap = {
 	add = {
-		desc = "BUILDING_LEVEL_BASE"
-		value = 1
-	}
-	add = {
-		desc = "BUILDING_LEVEL_DEVELOPMENT"
-		value = development
-		multiply = 0.1
-	}
-	add = {
 		desc = "BUILDING_LEVEL_RGO_MAX"
 		value = max_rgo_workers
-		multiply = 0.5
-	}
-	if = {
-		limit = {
-			has_river = yes
-		}
-		add = {
-			desc = "BUILDING_LEVEL_HAS_RIVER"
-			value = 1
-		}
+		multiply = 2
 	}
 }
 
@@ -548,14 +506,9 @@ kurmina_headquarter_max_level = {
 		value = 1
 	}
 	add = {
-		desc = "BUILDING_LEVEL_POPULATION"
-		value = population
-		multiply = 0.01
-	}
-	add = {
 		desc = "BUILDING_LEVEL_DEVELOPMENT"
 		value = development
-		multiply = 0.05
+		multiply = 0.25
 	}
 }
 
@@ -690,3 +643,59 @@ kurultai_max_level = {
 	}
 }
 
+zazo_max_level = {
+	if = {
+		limit = {
+			current_age_or_later = { age = age_1_traditions }
+		}
+		add = {
+			desc = "age_1_traditions"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			current_age_or_later = { age = age_2_renaissance }
+		}
+		add = {
+			desc = "age_2_renaissance"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			current_age_or_later = { age = age_3_discovery }
+		}
+		add = {
+			desc = "age_3_discovery"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			current_age_or_later = { age = age_4_reformation }
+		}
+		add = {
+			desc = "age_4_reformation"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			current_age_or_later = { age = age_5_absolutism }
+		}
+		add = {
+			desc = "age_5_absolutism"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			current_age_or_later = { age = age_6_revolutions }
+		}
+		add = {
+			desc = "age_6_revolutions"
+			value = 1
+		}
+	}
+}

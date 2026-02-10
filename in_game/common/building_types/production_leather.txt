@@ -17,23 +17,23 @@
 	
 	unique_production_methods = {
 		leather_guild_maintenance = {
-			livestock = 1.0
-			sand = 0.75
-			tools = 0.15
+			livestock = 0.2
+			sand = 0.3
+			tools = 0.05
 			
 			produced = leather
-			output = 1
+			output = 0.4
 			
 			category = guild_input
 		}
 	
 		tannery_maintenance = {
-			wild_game = 1.5
-			sand = 0.75
-			tools = 0.15
+			wild_game = 0.3
+			sand = 0.3
+			tools = 0.05
 			
 			produced = leather
-			output = 1
+			output = 0.4
 			
 			category = guild_input
 		}
@@ -44,6 +44,7 @@
 	custom_tags = { guild }
 	construction_demand = guild_construction
 }
+
 
 tanning_workshop = {
 	is_foreign = no
@@ -64,12 +65,12 @@ tanning_workshop = {
 	
 	unique_production_methods = {
 		leather_livestock_workshop_maintenance = {
-			livestock = 0.9
-			sand = 0.70
-			tools = 0.15
+			livestock = 0.3
+			sand = 0.45
+			tools = 0.075
 			
 			produced = leather
-			output = 1.1
+			output = 0.6
 			
 			debug_max_profit = 0.6
 			
@@ -77,12 +78,12 @@ tanning_workshop = {
 		}
 	
 		leather_wildgame_workshop_maintenance = {
-			wild_game = 1.4
-			sand = 0.70
-			tools = 0.15
+			wild_game = 0.45
+			sand = 0.45
+			tools = 0.075
 			
 			produced = leather
-			output = 1.1
+			output = 0.6
 			
 			debug_max_profit = 0.6
 			
@@ -97,6 +98,7 @@ tanning_workshop = {
 	custom_tags = { workshop }
 	construction_demand = workshop_construction
 }
+
 
 tannery_manufactory = {
 	is_foreign = no
@@ -117,26 +119,26 @@ tannery_manufactory = {
 	
 	unique_production_methods = {
 		leather_manufactory_maintenance = {
-			livestock = 1.5
-			sand = 1.5
-			tools = 0.2
+			livestock = 0.4
+			sand = 0.6
+			tools = 0.1
 			
 			
 			
 			produced = leather
-			output = 2
+			output = 0.8
 			debug_max_profit = 0.75
 			
 			category = manufactory_input
 		}
 	
 		tannery_manufactory_maintenance = {
-			wild_game = 2.1
-			sand = 1.5
-			tools = 0.2
+			wild_game = 0.6
+			sand = 0.6
+			tools = 0.1
 			
 			produced = leather
-			output = 2
+			output = 0.8
 			debug_max_profit = 0.75
 			category = manufactory_input
 		}
@@ -149,6 +151,7 @@ tannery_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+
 
 tannery_mill = {
 	is_foreign = no
@@ -169,26 +172,26 @@ tannery_mill = {
 	
 	unique_production_methods = {
 		leather_mill_maintenance = {
-			livestock = 3.0
-			sand = 2.5
-			tools = 0.3
+			livestock = 0.5
+			sand = 0.75
+			tools = 0.125
 			
 			
 			
 			produced = leather
-			output = 4
+			output = 1
 			debug_max_profit = 1.0
 			
 			category = mills_input
 		}
 	
 		tannery_mill_maintenance = {
-			wild_game = 5.0
-			sand = 2.5
-			tools = 0.3
+			wild_game = 0.75
+			sand = 0.75
+			tools = 0.125
 			
 			produced = leather
-			output = 4
+			output = 1
 			debug_max_profit = 1.0
 			category = mills_input
 		}

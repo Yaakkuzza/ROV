@@ -17,14 +17,14 @@
 	
 	unique_production_methods = {
 		naval_supplies_guild_maintenance = {
-			lumber = 0.15
-			fiber_crops = 0.5
-			tar = 0.5
-			copper = 0.1
+			lumber = 0.08
+			fiber_crops = 0.1
+			tar = 0.12
+			copper = 0.04
 			tin = 0.02
 			
 			produced = naval_supplies
-			output = 1
+			output = 0.4
 			
 			category = guild_input
 		}
@@ -33,6 +33,8 @@
 	custom_tags = { guild }
 	construction_demand = guild_construction
 }
+
+
 
 naval_supplies_workshop = {
 	is_foreign = no
@@ -53,14 +55,14 @@ naval_supplies_workshop = {
 	
 	unique_production_methods = {
 		naval_supplies_workshop_maintenance = {
-			lumber = 0.1
-			fiber_crops = 0.4
-			tar = 0.5
-			copper = 0.1
-			tin = 0.02
+			lumber = 0.12
+			fiber_crops = 0.15
+			tar = 0.18
+			copper = 0.06
+			tin = 0.03
 			
 			produced = naval_supplies
-			output = 1.1
+			output = 0.6
 			
 			debug_max_profit = 0.6
 			
@@ -73,6 +75,9 @@ naval_supplies_workshop = {
 	custom_tags = { workshop }
 	construction_demand = workshop_construction
 }
+
+
+
 
 naval_supplies_manufactory = {
 	is_foreign = no
@@ -95,13 +100,13 @@ naval_supplies_manufactory = {
 
 	unique_production_methods = {
 		naval_supplies_manufactory_maintenance = {
-			lumber = 0.6
-			fiber_crops = 0.6
-			tar = 0.6
-			copper = 0.2
+			lumber = 0.16
+			fiber_crops = 0.20
+			tar = 0.24
+			copper = 0.08
 			tin = 0.04
 			produced = naval_supplies
-			output = 2
+			output = 0.8
 			
 			debug_max_profit = 0.75
 			
@@ -114,6 +119,8 @@ naval_supplies_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+
+
 
 naval_supplies_mill = {
 	is_foreign = no
@@ -136,13 +143,13 @@ naval_supplies_mill = {
 
 	unique_production_methods = {
 		naval_supplies_mill_maintenance = {
-			lumber = 1.2
-			fiber_crops = 1.2
-			tar = 1.2
-			copper = 0.3
-			tin = 0.06
+			lumber = 0.2
+			fiber_crops = 0.25
+			tar = 0.3
+			copper = 0.1
+			tin = 0.05
 			produced = naval_supplies
-			output = 4
+			output = 1
 			
 			debug_max_profit = 1.0
 			
@@ -155,3 +162,4 @@ naval_supplies_mill = {
 	custom_tags = { lategame_manufactory }
 	construction_demand = mill_construction
 }
+

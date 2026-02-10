@@ -251,7 +251,7 @@ patriarchate_law = {
 			join_autocephalous_patriarchate_cost_modifier = 0.2
 			create_autocephalous_patriarchate_cost_modifier = 0.2
 			third_rome_cost_modifier = 0.2
-			clergy_estate_max_tax = 0.5
+			clergy_estate_max_tax = 0.1
 		}
 		estate_preferences = {
 			clergy_estate

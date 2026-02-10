@@ -24,7 +24,7 @@
 	}
 	
 	capital_modifier = {
-		local_manpower = 0.015
+		local_manpower = 0.04
 		can_recruit_regiment_in_this_location = yes
 		local_crown_estate_power = 0.25
 	}
@@ -100,7 +100,7 @@ armory = {
 	
 	
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.02
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -145,7 +145,7 @@ training_fields = {
 	}
 	
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.02
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -190,7 +190,7 @@ barracks = {
 	}
 
 	modifier = {
-		local_manpower = 0.015
+		local_manpower = 0.03
 		can_recruit_regiment_in_this_location = yes
 		max_regiments_trained_at_same_time = 1
 	}
@@ -235,7 +235,7 @@ regimental_camp = {
 	}	
 
 	modifier = {
-		local_manpower = 0.02
+		local_manpower = 0.04
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -282,7 +282,7 @@ conscription_center = {
 	}	
 
 	modifier = {
-		local_manpower = 0.025
+		local_manpower = 0.05
 		can_recruit_regiment_in_this_location = yes
 		max_regiments_trained_at_same_time = 5
 	}
@@ -333,7 +333,7 @@ jurchen_barracks = {
 	
 	
 	modifier = {
-		local_manpower = 0.0025
+		local_manpower = 0.005
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -374,7 +374,7 @@ thema_headquarters = {
 	}
 	
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.02
 		can_recruit_regiment_in_this_location = yes
 		local_crown_estate_power = -0.1
 	}
@@ -411,7 +411,7 @@ city_guard = {
 	}
 	
 	capital_modifier = {
-		local_manpower = 0.015
+		local_manpower = 0.03
 		can_recruit_regiment_in_this_location = yes
 	}
 

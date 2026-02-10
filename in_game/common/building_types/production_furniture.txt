@@ -1,4 +1,6 @@
-﻿# Age of Traditions
+﻿
+
+# Age of Traditions
 
 furniture_guild = {
 	is_foreign = no
@@ -19,18 +21,19 @@ furniture_guild = {
 	
 	unique_production_methods = {
 		furniture_maintenance = {
-			lumber = 1.0
-			dyes = 0.15
-			tools = 0.15
+			lumber = 0.2
+			dyes = 0.03
+			tools = 0.06
 			
 			produced = furniture
-			output = 1
+			output = 0.4
 			
 			category = guild_input
 		}
 	}
 	construction_demand = guild_construction
 }
+
 
 furniture_workshop = {
 	is_foreign = no
@@ -51,12 +54,12 @@ furniture_workshop = {
 	
 	unique_production_methods = {
 		furniture_workshop_maintenance = {
-			lumber = 1.0
-			dyes = 0.12
-			tools = 0.12
+			lumber = 0.3
+			dyes = 0.045
+			tools = 0.09
 			
 			produced = furniture
-			output = 1.1
+			output = 0.6
 			
 			debug_max_profit = 0.6
 			
@@ -93,12 +96,12 @@ furniture_manufactory = {
 	
 	unique_production_methods = {
 		furniture_manufactory_maintenance = {
-			lumber = 1.8
-			dyes = 0.2
-			tools = 0.2
+			lumber = 0.4
+			dyes = 0.06
+			tools = 0.12
 
 			produced = furniture
-			output = 2.0
+			output = 0.8
 			
 			category = manufactory_input
 			
@@ -134,12 +137,12 @@ furniture_mill = {
 	
 	unique_production_methods = {
 		furniture_mill_maintenance = {
-			lumber = 3
-			dyes = 0.35
-			tools = 0.35
+			lumber = 0.5
+			dyes = 0.075
+			tools = 0.15
 			
 			produced = furniture
-			output = 4
+			output = 1
 			
 			debug_max_profit = 1.0
 			
@@ -149,3 +152,6 @@ furniture_mill = {
 	
 	construction_demand = mill_construction
 }
+
+
+

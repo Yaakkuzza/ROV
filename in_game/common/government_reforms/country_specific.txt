@@ -866,10 +866,9 @@ ancient_french_taxation = {
 
 
 	country_modifier = {
-		monthly_legitimacy = 0.1
 		global_peasant_enfranchisment = -0.20
-		government_reform_slots = 1
-		nobles_estate_max_tax = 0.20
+		tax_income_efficiency = large_tax_income_efficiency_penalty
+		global_estate_max_tax = -0.05
 	}
 	years = 2
 }
@@ -899,8 +898,6 @@ french_feudal_nobility = { # French Feudalism
 	}
 	country_modifier = {
 		has_appanages_subjects = yes
-		diplomatic_capacity = 1
-		cultures_capacity = 2
 		monthly_towards_serfdom = societal_value_large_monthly_move
 		monthly_towards_aristocracy = societal_value_monthly_move
 	}

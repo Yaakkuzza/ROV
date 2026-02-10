@@ -215,7 +215,7 @@ a_mamluk_unit_renaissance = {
 	copy_from = a_age_2_renaissance_infantry
 
 	morale_damage_done = 0.1
-	combat_power = 1.05
+	combat_power = 1.25
 	gfx_tags = { heavy_tag }
 
 

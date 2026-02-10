@@ -37,7 +37,7 @@
 	
 	dop_favor_the_nobles = {
 		country_modifier = {
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 			nobles_estate_agenda_impact = 0.1
 			global_nobles_food_consumption = 0.1
 			monthly_towards_aristocracy = societal_value_monthly_move
@@ -50,7 +50,7 @@
 
 	dop_favor_the_burghers = {
 		country_modifier = {
-			burghers_estate_max_tax = 0.1
+			burghers_estate_max_tax = 0.05
 			burghers_estate_agenda_impact = 0.1
 			global_burghers_food_consumption = 0.1
 			court_language_is_market_language_importance_modifier = 0.5
@@ -64,7 +64,7 @@
 
 	dop_favor_the_clergy = {
 		country_modifier = {
-			clergy_estate_max_tax = 0.1
+			clergy_estate_max_tax = 0.05
 			clergy_estate_agenda_impact = 0.1
 			global_clergy_food_consumption = 0.1
 			court_language_is_liturgical_language_importance_modifier = 0.5
@@ -78,7 +78,7 @@
 
 	dop_favor_the_commoners = {
 		country_modifier = {
-			peasants_estate_max_tax = 0.1
+			peasants_estate_max_tax = 0.05
 			peasants_estate_agenda_impact = 0.1
 			global_peasants_food_consumption = 0.1
 			global_laborers_food_consumption = 0.1
@@ -125,7 +125,7 @@
 		country_modifier = {
 			global_crown_estate_power = -0.33
 			monthly_legitimacy = 0.05
-			global_estate_max_tax = 0.1
+			global_estate_max_tax = 0.05
 			nobles_estate_agenda_impact = 0.1
 			burghers_estate_agenda_impact = 0.1
 		}
@@ -269,9 +269,8 @@
 		}
 
 		country_modifier = {
-			global_crown_estate_power = 0.10
+			global_crown_estate_power = 0.33
 			nobles_estate_agenda_impact = 0.2
-			global_estate_max_tax = 0.05
 			monthly_towards_absolutism = societal_value_tiny_monthly_move
 		}
 		estate_preferences = {

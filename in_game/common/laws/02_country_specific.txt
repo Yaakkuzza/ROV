@@ -114,7 +114,7 @@ fra_fouage_tax = {
 	allowed_fouage_tax = {
 		country_modifier = {
 			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
-			peasants_estate_max_tax = 0.1
+			peasants_estate_max_tax = 0.05
 			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
 		}
 		estate_preferences = {
@@ -145,8 +145,8 @@ fra_taille = {
 	permanent_tax = {
 		country_modifier = {
 			monthly_towards_centralization = societal_value_tiny_monthly_move
-			burghers_estate_max_tax	= 0.1
-			peasants_estate_max_tax	= 0.1
+			burghers_estate_max_tax	= 0.05
+			peasants_estate_max_tax	= 0.05
 			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 		}
@@ -191,7 +191,7 @@ fra_5_percent_tax = {
 	no_five_percent_tax = {
 		country_modifier = {
 			estate_enrichment = 0.10
-			peasants_estate_max_tax	= 0.10
+			peasants_estate_max_tax	= 0.05
 		}
 		estate_preferences = {
 			nobles_estate
@@ -925,7 +925,7 @@ mesta_council_law = {
 	quadrillas_organization = {
 		country_modifier = {
 			global_wool_output_modifier = 0.25
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 			tax_income_efficiency = small_tax_income_efficiency_bonus
 		}
 		estate_preferences = {
@@ -940,7 +940,7 @@ mesta_council_law = {
 		country_modifier = {
 			global_wool_output_modifier = 0.5
 			expand_rgo_farming_cost_modifier = 0.33
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
 		}
 		estate_preferences = {

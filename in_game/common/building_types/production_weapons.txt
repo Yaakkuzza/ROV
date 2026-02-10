@@ -1,4 +1,5 @@
-﻿weapon_guild = {
+﻿
+weapon_guild = {
 	is_foreign = no
 	pop_type = burghers
 	max_levels = guild_max_level
@@ -18,28 +19,29 @@
 	
 	unique_production_methods = {
 		pre_columbian_weapon_smith_maintenance = {
-			lumber = 0.07
-			stone = 1.0
+			lumber = 0.1
+			stone = 0.45
 			produced = weaponry
-			output = 0.4
+			output = 0.32
 			category = guild_input
 			
 			debug_max_profit = 0.1
 		}
 		weapon_smith_maintenance = {
-			lumber = 0.25
-			coal = 0.3
-			tools = 0.5
+			lumber = 0.1
+			coal = 0.03
+			iron = 0.08
+			tools = 0.05
 			category = guild_input
 			produced = weaponry
-			output = 1
+			output = 0.4
 		}
 		weapon_guild_obsidian_maintenance = {
-			lumber = 0.12
-			stone = 0.5
-			gems = 0.1
+			lumber = 0.1
+			stone = 0.25
+			gems = 0.05
 			produced = weaponry
-			output = 0.4
+			output = 0.36
 			category = guild_input
 			
 			debug_max_profit = 0.2
@@ -49,6 +51,7 @@
 	custom_tags = { guild }
 	construction_demand = guild_construction
 }
+
 
 weapon_workshop = {
 	is_foreign = no
@@ -70,13 +73,13 @@ weapon_workshop = {
 	
 	unique_production_methods = {
 		weapon_workshop_maintenance = {
-			lumber = 0.3
-			coal = 0.3
-			iron = 0.25
-			tools = 0.2
+			lumber = 0.15
+			coal = 0.045
+			iron = 0.12
+			tools = 0.075
 			category = workshop_input
 			produced = weaponry
-			output = 1.1
+			output = 0.6
 			
 			debug_max_profit = 0.5
 		}
@@ -88,6 +91,9 @@ weapon_workshop = {
 	custom_tags = { workshop }
 	construction_demand = workshop_construction
 }
+
+
+
 
 weapon_manufactory = {
 	is_foreign = no
@@ -110,13 +116,13 @@ weapon_manufactory = {
 	
 	unique_production_methods = {
 		weapon_manufactory_maintenance = {
-			lumber = 0.5
-			coal = 0.5
-			iron = 0.4
-			tools = 0.4
+			lumber = 0.2
+			coal = 0.06
+			iron = 0.16
+			tools = 0.1
 			category = manufactory_input
 			produced = weaponry
-			output = 2.0
+			output = 0.9
 			debug_max_profit = 0.75
 		}
 	}
@@ -124,6 +130,7 @@ weapon_manufactory = {
 	custom_tags = { midgame_manufactory }
 	construction_demand = manufactory_construction
 }
+
 
 weapon_factory = {
 	is_foreign = no
@@ -145,12 +152,12 @@ weapon_factory = {
 
 	unique_production_methods = {
 		weapon_factory_maintenance = {
-			steel = 1.0
-			coal = 0.3
-			lumber = 0.3
+			steel = 0.15
+			coal = 0.15
+			lumber = 0.1
 			category = mills_input
 			produced = weaponry
-			output = 4.0
+			output = 1.2
 			
 			debug_max_profit = 1.0
 		}

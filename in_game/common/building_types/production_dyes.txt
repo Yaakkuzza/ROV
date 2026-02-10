@@ -17,16 +17,16 @@
 	
 	unique_production_methods = {
 		dyes_guild_maintenance = {
-			lumber = 0.45
+			lumber = 0.4
 		
 			produced = dyes
-			output = 0.2
+			output = 0.27
 			
 			category = guild_input
 		}
 		alum_dyes_guild_maintenance = {
-			alum = 0.02
-			lumber = 0.6
+			alum = 0.05
+			lumber = 0.3
 			
 			
 			produced = dyes
@@ -40,6 +40,9 @@
 	construction_demand = guild_construction
 
 }
+
+
+
 
 #####################
 dyes_workshop = {
@@ -63,11 +66,11 @@ dyes_workshop = {
 	
 	unique_production_methods = {
 		dyes_workshop_maintenance = {
-			alum = 0.05
-			lumber = 0.6
+			alum = 0.1
+			lumber = 0.4
 		
 			produced = dyes
-			output = 0.4
+			output = 0.45
 			
 			debug_max_profit = 0.6
 			category = workshop_input
@@ -77,6 +80,7 @@ dyes_workshop = {
 	construction_demand = workshop_construction
 
 }
+
 
 ###########################################
 dyesworks = {
@@ -98,11 +102,11 @@ dyesworks = {
 	
 	unique_production_methods = {
 		dyesworks_maintenance = {
-			alum = 0.25
-			lumber = 2.6
+			alum = 0.15
+			lumber = 0.6
 			
 			produced = dyes
-			output = 2
+			output = 0.6
 			
 			debug_max_profit = 0.75
 			
@@ -114,6 +118,10 @@ dyesworks = {
 
 	construction_demand = manufactory_construction
 }
+
+
+
+
 
 dyes_mill = {
 	is_foreign = no
@@ -134,11 +142,11 @@ dyes_mill = {
 	
 	unique_production_methods = {
 		dyesmill_maintenance = {
-			alum = 0.3
-			lumber = 6.0
+			alum = 0.2
+			lumber = 0.8
 			
 			produced = dyes
-			output = 4
+			output = 0.8
 			
 			debug_max_profit = 1.0
 			

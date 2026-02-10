@@ -991,7 +991,7 @@ janissary_barracks = {
 	is_foreign = no
 	pop_type = slaves
 	
-	max_levels = janissary_barracks_size
+	max_levels = manpower_max_level
 	employment_size = slave_soldier_barracks
 	
 	category = military_category
@@ -1007,7 +1007,7 @@ janissary_barracks = {
 	always_add_demands = yes
 	
 	modifier = {
-		local_manpower = 0.025
+		local_manpower = 0.04
 		can_recruit_regiment_in_this_location = yes
 	}
 	
@@ -3760,7 +3760,7 @@ bey_fortress = {
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
-	max_levels = 1
+	max_levels = manpower_max_level
 	
 	employment_size = manpower_employment
 	category = defense_category
@@ -3793,7 +3793,7 @@ bey_fortress = {
 
 	modifier = {
 		local_crown_estate_power = 0.25
-		local_manpower = 0.01
+		local_manpower = 0.02
 		local_defensive = 0.25
 
 		can_recruit_regiment_in_this_location = yes

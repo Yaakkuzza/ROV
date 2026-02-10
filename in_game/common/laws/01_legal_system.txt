@@ -493,7 +493,7 @@
 		}
 		country_modifier = {
 			monthly_towards_centralization = societal_value_minor_monthly_move
-			global_estate_max_tax = 0.1
+			global_estate_max_tax = 0.05
 			global_estate_target_satisfaction = small_permanent_target_satisfaction
 		}
 		estate_preferences = {

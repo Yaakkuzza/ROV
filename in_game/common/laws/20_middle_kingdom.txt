@@ -2033,7 +2033,7 @@ six_ministries = { #Container for the strengthen_ministry action select_trigger
 		country_modifier = { #Change if the actual modifier is changed
 			minting_income_factor = 0.1
 			minting_inflation_threshold = 0.01
-			global_estate_max_tax = 0.1
+			global_estate_max_tax = 0.05
 		}
 	}
 	ministry_of_war = {

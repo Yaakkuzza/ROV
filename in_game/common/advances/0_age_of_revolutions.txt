@@ -157,7 +157,7 @@ construction_speed_revolutions = {
 coal_improvements_revolutions = {
 	age = age_6_revolutions
 	requires = construction_speed_revolutions
-	global_coal_output_modifier = 0.5
+	global_coal_output_modifier = 0.2
 }
 
 #####################################
@@ -178,7 +178,7 @@ hot_blast_furnace = {
 	
 	requires = industrialization_advance
 	
-	global_iron_output_modifier = 0.5
+	global_iron_output_modifier = 0.2
 }
 
 repair_at_sea_aorev = {
@@ -207,7 +207,7 @@ cupola_smelting = {
 	
 	requires = hot_blast_furnace
 	
-	global_lead_output_modifier = 1.0
+	global_lead_output_modifier = 0.2
 }
 
 pop_promotion_speed_age_6 = {
@@ -317,8 +317,8 @@ long_rifle = {
 	age = age_6_revolutions
 	requires = levee_en_masse_advance
 	
-	global_fur_output_modifier = 0.3
-	global_wild_game_output_modifier = 0.3
+	global_fur_output_modifier = 0.2
+	global_wild_game_output_modifier = 0.2
 }
 
 military_tactics_advance_6 = {

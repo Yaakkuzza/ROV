@@ -572,14 +572,12 @@ slave_market = {
 	unique_production_methods = {
 
 		slave_market_maintenance = {
-			leather = 0.35
-			tools = 0.3
-			weaponry = 0.25
-			paper = 0.25
-			slaves_goods = 0.5
+			leather = 0.1
+			tools = 0.05
+			weaponry = 0.05
 
 			produced = slaves_goods
-			output = 2.0
+			output = 0.4
 
 			category = building_maintenance
 		}
