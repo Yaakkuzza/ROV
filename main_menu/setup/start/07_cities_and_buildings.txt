@@ -1,7 +1,7 @@
 locations={
 	
 	#sweden
-	stockholm = { rank = town 		town_setup = important_scandinavian_town }
+	stockholm = { rank = city 		town_setup = important_scandinavian_town }
 	linkoping = { rank = town 		town_setup = scandinavian_town }
 	soderkoping = { rank = town 	town_setup = scandinavian_town }
 	kalmar = { rank = town 			town_setup = scandinavian_town }
@@ -9,7 +9,8 @@ locations={
 	lund = { rank = town 			town_setup = scandinavian_town }
 	abo = { rank = town 			town_setup = scandinavian_town }
 	vyborg = { rank = town			town_setup = scandinavian_town }
-	visby = { rank = town 			town_setup = baltic_town }
+	norrtalje = { rank = town 		town_setup = scandinavian_town }
+	sodertalje = { rank = town 		town_setup = scandinavian_town }
 	
 	#Norway
 	tonsberg = { rank = town 		town_setup = scandinavian_town }
@@ -17,16 +18,16 @@ locations={
 	bergen = { rank = town 			town_setup = scandinavian_town }
 	hamar = { rank = town 			town_setup = scandinavian_town }
 	stavanger = { rank = town 		town_setup = scandinavian_town }
-	oslo = { rank = town 			town_setup = important_scandinavian_town }
+	oslo = { rank = town 			town_setup = scandinavian_town }
 	
 	#denmark
-	kobenhavn = { rank = town 		town_setup = important_scandinavian_town }
-	roskilde = { rank = town 		town_setup = important_scandinavian_town }
-	viborg = { rank = town			town_setup = important_scandinavian_town }
-	randers = { rank = town 		town_setup = important_scandinavian_town }
-	aalborg = { rank = town 		town_setup = important_scandinavian_town }
-	odense = { rank = town 			town_setup = important_scandinavian_town }
-	flensburg = { rank = town 		town_setup = german_coastal_town }
+	kobenhavn = { rank = town 		town_setup = scandinavian_town }
+	roskilde = { rank = city 		town_setup = important_scandinavian_town }
+	viborg = { rank = town			town_setup = scandinavian_town }
+	randers = { rank = town 		town_setup = scandinavian_town }
+	aalborg = { rank = town 		town_setup = scandinavian_town }
+	odense = { rank = town 			town_setup = scandinavian_town }
+	flensburg = { rank = town 		town_setup = scandinavian_town }
 
 	skalholt = { rank = town 		town_setup = scandinavian_town }
 	
@@ -265,6 +266,9 @@ locations={
 	prague = { rank = city town_setup = german_city }
 	vienna = { rank = city town_setup = german_city }
 	
+	korneuburg = { rank = town town_setup = german_town }
+	austria_baden = { rank = town town_setup = german_town }
+	krems = { rank = town town_setup = german_town }
 	aachen = { rank = town town_setup = german_town }
 	bamberg = { rank = town town_setup = german_town }
 	brandenburg = { rank = town town_setup = german_town }
@@ -324,7 +328,8 @@ locations={
 	landau_rhineland = { rank = town town_setup = german_town }
 
 	brno = { rank = town town_setup = german_town }
-	kutna_hora = { rank = town town_setup = german_town }
+	slany = { rank = town town_setup = german_town }
+	kourim = { rank = town town_setup = german_town }
 	olomouc = { rank = town town_setup = german_town }
 	opole = { rank = town town_setup = german_town }
 	plzen = { rank = town town_setup = german_town }
@@ -366,13 +371,18 @@ locations={
 	gdansk = { rank = city		town_setup = german_coastal_city }
 	kaunas = { rank = town	 	town_setup = baltic_town }
 	konigsberg = { rank = town	town_setup = german_coastal_town }
-	krakow = { rank = city 		town_setup = polish_town }
+	krakow = { rank = city 		town_setup = polish_city }
 	plock = 	{ rank = town	town_setup = polish_town }
 	poznan = 	{ rank = town	town_setup = polish_town }
 	torun = 	{ rank = town	town_setup = baltic_town	prosperity = -0.5}
 	wroclaw = { rank = town 	town_setup = polish_town }
 	wloclawek =	{ prosperity = -0.2 }
 	radziejow =	{ prosperity = -0.2 }
+	proszowice = 	{ rank = town	town_setup = polish_town }
+	wieliczka = 	{ rank = town	town_setup = polish_town }
+	busko_zdroj = 	{ rank = town	town_setup = polish_town }
+	wislica = 		{ rank = town	town_setup = polish_town }
+	warsaw = 		{ rank = town	town_setup = polish_town }
 
 	# Baltic
 	riga = { rank = city			town_setup = german_coastal_city  }
@@ -384,10 +394,12 @@ locations={
 	# Ruthenia
 	chernihiv = { rank = town 	town_setup = ruthenian_town }
 	ismail = { rank = town town_setup = ruthenian_town }
-	kyiv = { rank = town 		town_setup = ruthenian_town }	
+	kyiv = { rank = city 		town_setup = russian_city }	
 	lviv = { rank = town 		town_setup = ruthenian_town }	
 	polotsk = { rank = town 	town_setup = ruthenian_town }
 	poltava = { rank = town town_setup = ruthenian_town }
+	dymer = { rank = town town_setup = ruthenian_town }
+	fastiv = { rank = town town_setup = ruthenian_town }
 
 	gomel = { rank = town 		town_setup = ruthenian_town }	
 	grodno = { rank = town 		town_setup = ruthenian_town }	
@@ -403,6 +415,10 @@ locations={
 	kursk = { rank = town 			town_setup = russian_town }
 	vladimir = { rank = town 		town_setup = russian_town }
 	yaroslavl = { rank = town 		town_setup = russian_town }
+	zvenigorod = { rank = town 		town_setup = russian_town }
+	pushkino = { rank = town 		town_setup = russian_town }
+	bronnitsy = { rank = town 		town_setup = russian_town }
+	odintsovo = { rank = town 		town_setup = russian_town }
 
 	nizhny_novgorod = { rank = town 		town_setup = russian_town }
 	rostov = { rank = town 		town_setup = russian_town }

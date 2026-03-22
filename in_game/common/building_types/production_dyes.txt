@@ -125,7 +125,7 @@ dyesworks = {
 
 dyes_mill = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = burghers
 	max_levels = mills_max_level
 	
 	category = basic_industry_category

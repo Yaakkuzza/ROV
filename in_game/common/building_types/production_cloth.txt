@@ -173,7 +173,7 @@ cloth_manufactory = {
 
 textile_mill = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = burghers
 	max_levels = mills_max_level
 	
 	category = consumer_goods_category

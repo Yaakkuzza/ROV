@@ -178,7 +178,7 @@ tar_kiln = {
 	pop_type = laborers
 	max_levels = rural_building_cap
 	
-	employment_size = tiny_rural_peasant_produce_employment
+	employment_size = advanced_peasant_building_employment
 	
 	category = basic_industry_category
 	
@@ -276,7 +276,7 @@ stone_quarry = {
 			lumber = 0.2
 			
 			produced = stone
-			output = 0.6
+			output = 0.54
 			
 			category = building_maintenance
 		}
@@ -290,6 +290,7 @@ stone_quarry = {
 lumber_mill = {
 	is_foreign = no
 	max_levels = rural_building_cap
+	min_levels = 2
 	pop_type = laborers
 	
 	employment_size = rural_peasant_produce_employment
@@ -417,6 +418,7 @@ bog_iron_smelter = {
 			raw_material = goods:copper
 			raw_material = goods:tin
 			raw_material = goods:lead
+			raw_material = goods:coal
 		}
 	}
 

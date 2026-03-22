@@ -31,7 +31,7 @@ tools_guild = {
 		stone_tools_guild_maintenance = {
 			stone = 0.6
 			produced = tools
-			output = 0.32
+			output = 0.36
 			debug_max_profit = 0.1
 
 			category = guild_input
@@ -82,7 +82,7 @@ tools_workshop = {
 
 iron_foundry = {
 	is_foreign = no
-	pop_type = laborers		#unique
+	pop_type = burghers		#unique
 	max_levels = manufactory_max_level
 	
 	employment_size = manufactory_employment
@@ -120,7 +120,7 @@ iron_foundry = {
 
 iron_mill = {
 	is_foreign = no
-	pop_type = laborers		#unique
+	pop_type = burghers		#unique
 	max_levels = mills_max_level
 	
 	employment_size = mills_employment

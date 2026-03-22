@@ -120,7 +120,7 @@ putrefaction_works = {
 
 putrefaction_mill = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = burghers
 	max_levels = manufactory_max_level
 	
 	category = basic_industry_category

@@ -240,7 +240,7 @@ firearms_manufactory = {
 
 firearms_factory = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = burghers
 	max_levels = mills_max_level
 	
 	category = weapons_industry_category

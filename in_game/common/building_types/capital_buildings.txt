@@ -603,7 +603,6 @@ local_governor = {
 	}
 
 	remove_if = {
-		location = { has_road_to_capital = no }
 	}
 
 	expensive = yes
@@ -655,7 +654,6 @@ naval_governor = {
 	}
 
 	remove_if = {
-		location = { has_road_to_capital = yes }
 	}
 
 	expensive = yes

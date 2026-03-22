@@ -230,7 +230,7 @@ cannon_foundry = {
 
 cannons_factory = {
 	is_foreign = no
-	pop_type = laborers
+	pop_type = burghers
 	max_levels = manufactory_max_level
 	
 	category = weapons_industry_category
