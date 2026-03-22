@@ -1,9 +1,9 @@
 ﻿city_upgrade = {
-	gold = 500
+	gold = 1500
 }
 
 town_upgrade = {
-	gold = 200
+	gold = 250
 }
 
 rural_settlement_upgrade = {

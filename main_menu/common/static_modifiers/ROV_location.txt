@@ -71,7 +71,7 @@ capital = {
 	game_data = {
 		category = location
 	}
-	local_proximity_source = 40
+	local_proximity_source = 20
 	local_max_control = 0.30
 	local_population_capacity_modifier = 0.5
 	local_migration_attraction = 0.025
