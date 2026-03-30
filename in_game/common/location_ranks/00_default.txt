@@ -7,8 +7,7 @@ city = {
 		local_nobles_desired_pop = 0.05
 		local_clergy_desired_pop = 0.1
 
-		local_max_rgo_size_modifier = -0.5
-		local_proximity_source = 40
+		local_proximity_source = 30
 		local_max_control = 0.1
 	
 		local_population_capacity_modifier = 0.5
@@ -59,7 +58,6 @@ town = {
 		local_nobles_desired_pop = 0.025
 		local_clergy_desired_pop = 0.05
 
-		local_proximity_source = 20
 		local_max_control = 0.05
 
 		local_integration_speed_modifier = -0.25

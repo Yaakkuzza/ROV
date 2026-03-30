@@ -646,6 +646,15 @@ kurultai_max_level = {
 zazo_max_level = {
 	if = {
 		limit = {
+			current_age_or_later = { age = age_1_traditions }
+		}
+		add = {
+			desc = "age_1_traditions"
+			value = 1
+		}
+	}
+	if = {
+		limit = {
 			current_age_or_later = { age = age_2_renaissance }
 		}
 		add = {

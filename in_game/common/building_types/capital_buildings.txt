@@ -626,7 +626,7 @@ local_governor = {
 	}
 
 	modifier = {
-		local_proximity_source = 8
+		local_proximity_source = 5
 	}
 }
 
@@ -677,6 +677,6 @@ naval_governor = {
 	}
 
 	modifier = {
-		local_proximity_source = 8
+		local_proximity_source = 5
 	}
 }
