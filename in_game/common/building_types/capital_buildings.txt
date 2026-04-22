@@ -598,7 +598,6 @@ local_governor = {
 	}
 
 	location_potential = {
-		has_road_to_capital = yes
 		is_port = no
 	}
 
@@ -649,7 +648,6 @@ naval_governor = {
 	}
 
 	location_potential = {
-		is_overseas_for_owner = no
 		is_port = yes
 	}
 
