@@ -47,7 +47,10 @@ fishing_village = {
 	
 	AI_optimization_flag_coastal = yes
 	location_potential = {
-		is_coastal = yes
+		OR = {
+			is_coastal = yes
+			raw_material = goods:fish
+		}
 	}
 	
 		
@@ -100,9 +103,20 @@ farming_village = {
 	rural_settlement = yes
 	
 	location_potential = {
+		NOT = { climate = arid }
+		NOT = { climate = arctic }
 		OR = {
-			NOT = { climate = arid }
-			NOT = { climate = arctic }
+			raw_material = goods:wheat
+			raw_material = goods:maize
+			raw_material = goods:rice
+			raw_material = goods:millet
+			raw_material = goods:legumes
+			raw_material = goods:potato
+			raw_material = goods:livestock
+			raw_material = goods:olives
+			raw_material = goods:fruit
+			raw_material = goods:wool
+			raw_material = goods:fur
 		}
 	}
 	
@@ -190,7 +204,7 @@ forest_village = {
 	construction_demand = village_construction
 
 	modifier = {
-		local_monthly_food = 2.0
+		local_food_capacity = 50
 		local_peasants_estate_power = 0.25		#25% higher here.
 	}
 }
@@ -596,9 +610,20 @@ sheep_farms = {
 	rural_settlement = yes
 
 	location_potential = {
+		NOT = { climate = arid }
+		NOT = { climate = arctic }
 		OR = {
-			NOT = { climate = arid }
-			NOT = { climate = arctic }
+			raw_material = goods:wheat
+			raw_material = goods:maize
+			raw_material = goods:rice
+			raw_material = goods:millet
+			raw_material = goods:legumes
+			raw_material = goods:potato
+			raw_material = goods:livestock
+			raw_material = goods:olives
+			raw_material = goods:fruit
+			raw_material = goods:wool
+			raw_material = goods:fur
 		}
 	}
 

@@ -561,9 +561,20 @@ fruit_orchard = {
 	city = no
 
 	location_potential = {
+		NOT = { climate = arid }
+		NOT = { climate = arctic }
 		OR = {
-			NOT = { climate = arid }
-			NOT = { climate = arctic }
+			raw_material = goods:wheat
+			raw_material = goods:maize
+			raw_material = goods:rice
+			raw_material = goods:millet
+			raw_material = goods:legumes
+			raw_material = goods:potato
+			raw_material = goods:livestock
+			raw_material = goods:olives
+			raw_material = goods:fruit
+			raw_material = goods:wool
+			raw_material = goods:fur
 		}
 	}
 
@@ -580,5 +591,10 @@ fruit_orchard = {
 
 	build_time = rural_build_time
 
-	construction_demand = farm_constructions
+	construction_demand = village_construction
+
+	modifier = {
+		local_food_capacity = 50
+		local_peasants_estate_power = 0.25		#25% higher here.
+	}
 }

@@ -1,0 +1,9 @@
+﻿prestige_building_construction = {
+	masonry = 3
+	tools = 2
+	glass = 2
+	copper = 2
+	goods_gold = 2
+	marble = 5
+	category = building_construction
+}

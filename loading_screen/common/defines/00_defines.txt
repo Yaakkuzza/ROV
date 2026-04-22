@@ -1246,8 +1246,8 @@ NCulture = {
 	ASSIMILATION_ACTOR_HAS_MARKET_LANGUAGE_MODIFIER = 0.2
 	ASSIMILATION_TARGET_HAS_MARKET_LANGUAGE_MODIFIER = -0.2
 
-	ASSIMILATION_ACCEPTED_CULTURE_MODIFIER = -0.75 # Accepted cultures are slower to assimilate because we already give them extra rights
-	ASSIMILATION_TOLERATED_CULTURE_MODIFIER = -0.25 
+	ASSIMILATION_ACCEPTED_CULTURE_MODIFIER = 0 # Accepted cultures are slower to assimilate because we already give them extra rights
+	ASSIMILATION_TOLERATED_CULTURE_MODIFIER = 0 
 
 	ASSIMILATION_IS_MERGED_CULTURE_GROUP_MODIFIER = 1.0 # if the owner culture is a Unified Culture Group and the target is part of that culture group
 	ASSIMILATION_TARGET_CULTURE_OPINION_OF_OWNER_MODIFER = 0.2 # range -3 to +3

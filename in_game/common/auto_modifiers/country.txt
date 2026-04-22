@@ -75,8 +75,8 @@ country_base_values = {
 	
 	maximum_religious_influence = 100
 	
-	global_pop_assimilation_speed = 0.002
-	global_pop_conversion_speed = 0.002
+	global_pop_assimilation_speed = 0.01
+	global_pop_conversion_speed = 0.01
 	
 	diplomatic_range = 1000
 	naval_range = 1000
