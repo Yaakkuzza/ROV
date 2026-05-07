@@ -247,7 +247,7 @@ horse_breeders = {
 stone_quarry = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = village_category
 	employment_size = village_employment_size
@@ -264,19 +264,19 @@ stone_quarry = {
 	unique_production_methods = {
 	
 		stone_quarry_maintenance = {
-			tools = 0.05
-			lumber = 0.1
+			tools = 0.1
+			lumber = 0.2
 			produced = stone
-			output = 0.6
+			output = 1.2
 			
 			category = building_maintenance
 		}
 		
 		crude_quarry_maintenance = {
-			lumber = 0.2
+			lumber = 0.4
 			
 			produced = stone
-			output = 0.54
+			output = 1.08
 			
 			category = building_maintenance
 		}
@@ -367,7 +367,7 @@ fiber_crops_farm = {
 sand_pit = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = village_category
 	employment_size = village_employment_size
@@ -385,12 +385,12 @@ sand_pit = {
 	
 	unique_production_methods = {
 		sand_pit_maintenance = {
-			tools = 0.05
-			lumber = 0.1
+			tools = 0.1
+			lumber = 0.2
 			category = building_maintenance
 			
 			produced = sand
-			output = 1.2
+			output = 2.4
 			
 		}
 	}
@@ -481,7 +481,7 @@ bog_iron_smelter = {
 clay_pit = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = village_category
 	employment_size = village_employment_size
@@ -498,8 +498,8 @@ clay_pit = {
 	unique_production_methods = {
 		clay_pit_maintenance = {
 			produced = clay
-			output = 1.2
-			lumber = 0.2
+			output = 2.4
+			lumber = 0.4
 			category = building_maintenance
 		}
 	}
@@ -550,7 +550,7 @@ salt_collector = {
 
 fruit_orchard = {
 	is_foreign = no
-	pop_type = peasants
+	pop_type = laborers
 	max_levels = rural_building_cap
 	
 	category = village_category
@@ -582,9 +582,9 @@ fruit_orchard = {
 		
 		fruit_orchard_maintenance = {
 			produced = fruit
-			output = 0.6
+			output = 1.2
 			
-			lumber = 0.2
+			lumber = 0.4
 			category = building_maintenance
 		}
 	}
@@ -592,9 +592,4 @@ fruit_orchard = {
 	build_time = rural_build_time
 
 	construction_demand = village_construction
-
-	modifier = {
-		local_food_capacity = 50
-		local_peasants_estate_power = 0.25		#25% higher here.
-	}
 }

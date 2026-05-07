@@ -1040,8 +1040,8 @@ ship_giant_maritime = 0.4
 ############################
 # Levy Scales
 ############################
-levy_generic_infantry_size = 0.02
-levy_generic_noble_cavalry_size = 0.1
+levy_generic_infantry_size = 0.05
+levy_generic_noble_cavalry_size = 0.2
 
 
 
@@ -1084,15 +1084,15 @@ monthly_spawn_chance_unique = 1
 ######################################
 build_price_age_of_tradition = 50
 build_price_age_of_renaissance = 100
-build_price_age_of_discovery = 200
-build_price_age_of_reformation = 400
-build_price_age_of_absolutism = 800
-build_price_age_of_revolution = 1200
+build_price_age_of_discovery = 150
+build_price_age_of_reformation = 200
+build_price_age_of_absolutism = 250
+build_price_age_of_revolution = 300
 
 
-expensive_build_price_age_of_tradition = 200
-expensive_build_price_age_of_renaissance = 400
-expensive_build_price_age_of_discovery = 800
-expensive_build_price_age_of_reformation = 1600
-expensive_build_price_age_of_absolutism = 3200
-expensive_build_price_age_of_revolution = 5000
+expensive_build_price_age_of_tradition = 100
+expensive_build_price_age_of_renaissance = 200
+expensive_build_price_age_of_discovery = 300
+expensive_build_price_age_of_reformation = 400
+expensive_build_price_age_of_absolutism = 500
+expensive_build_price_age_of_revolution = 600

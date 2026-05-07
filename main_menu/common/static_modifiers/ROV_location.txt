@@ -57,7 +57,7 @@ development = {
 	
 	free_building_levels = 1
 	
-	local_max_rgo_size = 0.05
+	local_max_rgo_size = 0.1
 	
 	local_life_expectancy = 0.1
 
@@ -71,8 +71,7 @@ capital = {
 	game_data = {
 		category = location
 	}
-	local_proximity_source = 30
-	local_max_control = 0.1
+	local_proximity_source = 100
 	local_population_capacity_modifier = 0.5
 	local_migration_attraction = 0.025
 	
@@ -111,7 +110,7 @@ total_population = {
 	supply_limit = 0.02
 	blockade_force_required = 0.02
 
-	local_max_rgo_size = 0.02
+	local_max_rgo_size = 0.05
 }
 
 rgo_level = {
@@ -132,12 +131,6 @@ market_center = {
 	local_institution_growth_modifier = 0.25
 	free_building_levels = 100
 	maximum_stockpile_capacity = 250
-}
-
-influence_of_the_old_capital_modifier = {
-	game_data = { category = location }
-	
-	local_proximity_source = 30
 }
 
 #multiplied by how far above FOOD_PRICE food is in this location.
@@ -172,4 +165,20 @@ abundant_free_land = {
 	}
 	local_migration_attraction = 0.2
 	local_population_growth = 0.025
+}
+
+has_road = {
+	game_data = {
+		category = location
+	}
+	local_monthly_development_modifier = 0.25
+	local_construction_speed = 0.05
+	local_institution_growth_modifier = 0.1
+}
+
+
+has_road_connected_to_capital = {
+	game_data = {
+		category = location
+	}
 }

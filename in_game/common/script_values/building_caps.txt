@@ -253,7 +253,7 @@ plantation_cap = {
 	add = {
 		desc = "BUILDING_LEVEL_RGO_MAX"
 		value = max_rgo_workers
-		multiply = 2
+		multiply = 1
 	}
 }
 
@@ -266,7 +266,7 @@ rural_building_cap = {
 	add = {
 		desc = "BUILDING_LEVEL_RGO_MAX"
 		value = max_rgo_workers
-		multiply = 2
+		multiply = 1
 	}
 }
 

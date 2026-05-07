@@ -7,6 +7,16 @@ wool = {
 
 	food = 5.0
 	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
+
+	demand_add = {
+		all =  0.005
+	}
+	demand_multiply = {
+		nobles = 5
+		peasants = 0
+		slaves = 0
+		tribesmen = 0
+	}
 }
 
 wild_game = {
@@ -18,12 +28,12 @@ wild_game = {
 	
 	default_market_price = 1
 	demand_add = {
-		all =  0.0004
+		all =  0.005
 	}
 	demand_multiply = {
-		nobles = 20
-		clergy = 5
-		burghers = 5
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 
@@ -38,16 +48,11 @@ fur = {
 	food = 2.0
 	
 	demand_add = {
-		upper = 0.05
+		upper = 0.1
 	}
 	
 	demand_multiply = {
-		nobles = 10
-	}
-	
-	
-	wealth_impact_threshold = {
-		all = 1.1
+		nobles = 5
 	}
 
 }
@@ -61,11 +66,13 @@ fish = {
 	
 	default_market_price = 1
 	demand_add = {
-		all = 0.001
+		all = 0.005
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 }
@@ -80,21 +87,16 @@ wheat = {
 	default_market_price = 1
 	
 	demand_add = {	
-		all = 0.001
+		all = 0.005
 	}
 	demand_multiply = {
-		upper = 2.5
+		nobles = 5
+		peasants = 0
 		slaves = 0
 		tribesmen = 0
 	}
-	
-	wealth_impact_threshold = {
-		peasants = 1.1
-		laborers = 1.1
-		soldiers = 1.0
-	}
-	
 
+	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 }
 
@@ -108,12 +110,15 @@ maize = {
 	default_market_price = 1
 	
 	demand_add = {
-		all = 0.008
+		all = 0.005
 	}
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
+	origin_in_new_world = yes
 	custom_tags = { new_world_goods }
 }
 
@@ -126,15 +131,18 @@ rice = {
 	
 	default_market_price = 1
 	demand_add = {
-		all = 0.0005
+		all = 0.001
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 	
 
+	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 }
 
@@ -147,14 +155,17 @@ millet = {
 	
 	default_market_price = 1
 	demand_add = {
-		all = 0.002
+		all = 0.005
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 
+	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 }
 
@@ -167,11 +178,13 @@ legumes = {
 	default_market_price = 1
 	transport_cost = 2
 	demand_add = {
-		all = 0.001
+		all = 0.005
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}	
 }
@@ -185,14 +198,17 @@ potato = {
 	default_market_price = 1
 	
 	demand_add = {
-		peasants = 0.001
-		laborers = 0.001
+		all = 0.005
 	}
 
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
+		tribesmen = 0
 	}
 
+	origin_in_new_world = yes
 	custom_tags = { new_world_goods }
 }
 
@@ -206,24 +222,17 @@ livestock = {
 	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
 	
 	demand_add = {	
-		all = 0.001
+		all = 0.005
 		
 	}
 	demand_multiply = {
-		nobles = 30
-		clergy = 10
-		burghers = 10
+		nobles = 5
+		peasants = 0
 		slaves = 0
 		tribesmen = 0
 	}
 	
-	wealth_impact_threshold = {
-		peasants = 1.1
-		laborers = 1.1
-		soldiers = 1.1
-	}
-
-	
+	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 }
 
@@ -236,14 +245,17 @@ olives = {
 	default_market_price = 1
 	
 	demand_add = {
-		all = 0.001
+		all = 0.005
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 
+	origin_in_old_world = yes
 	custom_tags = { old_world_goods }
 }
 
@@ -258,11 +270,13 @@ fruit = {
 	transport_cost = 2
 	
 	demand_add = {	
-		all = 0.002
+		all = 0.005
 	}
 	
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
+		slaves = 0
 		tribesmen = 0
 	}
 
@@ -278,18 +292,13 @@ beeswax = {
 	default_market_price = 2
 	
 	demand_add = {
-		all = 0.001
+		all = 0.002
 	}
 	demand_multiply = {
-		upper = 2
+		nobles = 5
+		peasants = 0
 		slaves = 0
 		tribesmen = 0
 	}
 	
-	wealth_impact_threshold = {
-		peasants = 1.1
-		laborers = 1.1
-		soldiers = 1.1
-	}
-
 }

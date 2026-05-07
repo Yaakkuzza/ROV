@@ -596,15 +596,17 @@ local_governor = {
 	city = yes
 		 
 	allow = {
-		owner = scope:actor #not in subjects
 		owner = { has_primary_or_accepted_culture = prev.dominant_culture }
-	}
-
-	location_potential = {
+		owner = scope:actor #not in subjects
 		is_port = no
 	}
 
+	location_potential = {
+		owner.capital != this
+	}
+
 	remove_if = {
+		is_capital = yes
 	}
 
 	expensive = yes
@@ -627,8 +629,20 @@ local_governor = {
 		}
 	}
 
+
+	construction_demand = town_building_construction
+
 	modifier = {
-		local_proximity_source = 5
+		local_proximity_source = 15
+	}
+
+	capital_country_modifier = {
+		monthly_legitimacy = -0.01
+		monthly_republican_tradition = -0.01
+		monthly_devotion = -0.01
+		monthly_horde_unity = -0.01
+		monthly_tribal_cohesion = -0.01
+		stability_decay = 0.01
 	}
 }
 
@@ -646,15 +660,18 @@ naval_governor = {
 	city = yes
 		 
 	allow = {
-		owner = scope:actor #not in subjects
 		owner = { has_primary_or_accepted_culture = prev.dominant_culture }
+		owner = scope:actor #not in subjects
+		is_port = yes
 	}
 
 	location_potential = {
 		is_port = yes
+		owner.capital != this
 	}
 
 	remove_if = {
+		is_capital = yes
 	}
 
 	expensive = yes
@@ -664,7 +681,7 @@ naval_governor = {
 	forbidden_for_estates = yes
 
 
-	build_time = government_build_time
+	build_time = town_building_construction
 
 
 	unique_production_methods = {
@@ -677,7 +694,19 @@ naval_governor = {
 		}
 	}
 
+
+	construction_demand = prestige_building_construction
+
 	modifier = {
-		local_proximity_source = 5
+		local_proximity_source = 15
+	}
+
+	capital_country_modifier = {
+		monthly_legitimacy = -0.01
+		monthly_republican_tradition = -0.01
+		monthly_devotion = -0.01
+		monthly_horde_unity = -0.01
+		monthly_tribal_cohesion = -0.01
+		stability_decay = 0.01
 	}
 }

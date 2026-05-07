@@ -150,7 +150,7 @@ NCountry = {
 	MAX_MANPOWER_YEARS = 5
 	MAX_SAILORS_YEARS = 5
 
-	BASE_RESEARCH_COST = 25
+	BASE_RESEARCH_COST = 20
 	AGE_RESEARCH_MODIFIER = 0.15		#multiplied per age..
 	PREVIOUS_AGE_REDUCTION = -8
 	
@@ -368,7 +368,7 @@ NCombat = {
 	
 	MAX_FRONTAGE_OVERSTACKING = 1.25	#25% overstack in flanks.
 	
-	LAND_LEVY_COMBAT_IMPACT = 0.4
+	LAND_LEVY_COMBAT_IMPACT = 0.5
 	
 	INITIATIVE_BASE_CHANCE = 0.1	# base chance each tick
 	INITIATIVE_CHANCE_EACH = 0.02 # Chance to engage per point of initiative
@@ -1201,7 +1201,7 @@ NCulture = {
 	ACCEPTED_CULTURE_BASE_COST = 3
 	TOLERATED_CULTURE_BASE_COST = 1.0
 	ACCEPTANCE_OPINION_POSITIVE_FACTOR = -0.25 # Kindred and Positive
-	ACCEPTANCE_OPINION_NEGATIVE_FACTOR = -0.5 # Enemy and Negative has a bigger impact
+	ACCEPTANCE_OPINION_NEGATIVE_FACTOR = -0.25 # Enemy and Negative has a bigger impact
 	ACCEPTANCE_LANGUAGE_FACTOR = -0.15
 	ACCEPTANCE_LANGUAGE_FAMILY_FACTOR = -0.05
 	ACCEPTANCE_POP_SIZE_COUNTRY_MULTIPLIER = 0.35
@@ -1250,8 +1250,8 @@ NCulture = {
 	ASSIMILATION_TOLERATED_CULTURE_MODIFIER = 0 
 
 	ASSIMILATION_IS_MERGED_CULTURE_GROUP_MODIFIER = 1.0 # if the owner culture is a Unified Culture Group and the target is part of that culture group
-	ASSIMILATION_TARGET_CULTURE_OPINION_OF_OWNER_MODIFER = 0.2 # range -3 to +3
-	ASSIMILATION_OWNER_CULTURE_OPINION_OF_TARGET_MODIFER = -0.1 # range -3 to +3. negative because the more they like a culture, the less drive to eradicate it
+	ASSIMILATION_TARGET_CULTURE_OPINION_OF_OWNER_MODIFER = 0.1 # range -3 to +3
+	ASSIMILATION_OWNER_CULTURE_OPINION_OF_TARGET_MODIFER = 0.05 # range -3 to +3. negative because the more they like a culture, the less drive to eradicate it
 
 	ACCEPTED_CULTURE_SETUP_ERROR_IF_ABOVE_MAX = 2 # If setup country has this many accepted cultures above the max accepted cultures, throw an error
 	ACCEPTED_CULTURE_SETUP_ERROR_IF_BELOW_MAX = 1 # If setup country has this many accepted cultures below the max accepted cultures (and there are available targets inside the country), throw an error
@@ -1409,8 +1409,8 @@ NLocation = {
 
 	RGO_BASE_TIME = 180
 	
-	RGO_LOAD_TIME_FRACTION = 1		#33% of cap, if pop can afford it.
-	RGO_LOAD_TIME_MAX_PEASANT_PERCENTAGE = 1 #max % of peasants
+	RGO_LOAD_TIME_FRACTION = 0.01		#33% of cap, if pop can afford it.
+	RGO_LOAD_TIME_MAX_PEASANT_PERCENTAGE = 0.01 #max % of peasants
 	
 	LOOT_MONTHS = 12
 	

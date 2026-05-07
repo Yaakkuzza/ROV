@@ -38,7 +38,7 @@
 fishing_village = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 
 	category = village_category
 	employment_size = village_employment_size
@@ -61,10 +61,10 @@ fishing_village = {
 	
 		fishing_village_maintenance = {
 			produced = fish
-			output = 0.6
+			output = 1.35
 			
-			salt = 0.06
-			tools = 0.02
+			salt = 0.12
+			tools = 0.04
 			
 			debug_max_profit = 0.6
 
@@ -74,10 +74,10 @@ fishing_village = {
 		
 		arctic_fishing_village_maintenance = {
 			produced = fish
-			output = 0.75
+			output = 1.5
 			
-			salt = 0.06
-			ivory = 0.01
+			salt = 0.12
+			ivory = 0.02
 			
 			debug_max_profit = 0.6
 	
@@ -85,17 +85,12 @@ fishing_village = {
 		}
 	}
 	construction_demand = village_construction
-
-	modifier = {
-		local_peasants_estate_power = 0.25		#25% higher here.
-		local_food_capacity = 50		
-	}
 }
 
 farming_village = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = village_category
 	employment_size = village_employment_size
@@ -126,10 +121,10 @@ farming_village = {
 	
 	unique_production_methods = {
 		farming_village_maintenance = {
-			tools = 0.02
-			clay = 0.48
+			tools = 0.04
+			clay = 0.96
 			
-			output = 0.4
+			output = 0.8
 			
 			produced = livestock
 			
@@ -141,16 +136,12 @@ farming_village = {
 
 	construction_demand = village_construction
 
-	modifier = {
-		local_food_capacity = 50
-		local_peasants_estate_power = 0.25		#25% higher here.
-	}
 }
 
 forest_village = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = village_category
 	employment_size = village_employment_size
@@ -176,11 +167,11 @@ forest_village = {
 		forest_tannery = {
 			produced = leather
 			
-			output = 0.2
+			output = 0.4
 			
-			sand = 0.2
-			tar = 0.04
-			tools = 0.04
+			sand = 0.4
+			tar = 0.08
+			tools = 0.08
 			
 			
 			category = building_maintenance
@@ -188,9 +179,9 @@ forest_village = {
 		hunting_lodges = {
 			produced = wild_game
 			
-			output = 0.6
+			output = 1.2
 			
-			weaponry = 0.1
+			weaponry = 0.2
 
 			
 			debug_max_profit = 0.4
@@ -202,17 +193,12 @@ forest_village = {
 
 	
 	construction_demand = village_construction
-
-	modifier = {
-		local_food_capacity = 50
-		local_peasants_estate_power = 0.25		#25% higher here.
-	}
 }
 
 market_village = {
 	is_foreign = no
 	max_levels = rural_building_cap
-	pop_type = peasants
+	pop_type = laborers
 	
 	employment_size = village_employment_size
 	
@@ -230,59 +216,55 @@ market_village = {
 	unique_production_methods = {
 		rural_blacksmith = {
 			produced = tools
-			output = 0.2
+			output = 0.4
 		
-			iron = 0.1
+			stone = 0.6
 			category = guild_input
 		}
 		
 		rural_glassmaker = {
 			produced = glass
-			output = 0.3
-			sand = 0.6
+			output = 0.6
+			sand = 1.2
 
 			category = guild_input
 		}
 
 		rural_millet_brewery = {
-			millet = 0.12
-			lumber = 0.04
-			tools = 0.02
+			millet = 0.24
+			lumber = 0.08
+			tools = 0.04
 			
 			produced = beer
-			output = 0.3
+			output = 0.6
 
 			
 			category = guild_input
 		}
 		rural_weaponmaker = {
 			produced = weaponry
-			output = 0.2
+			output = 0.4
 		
-			lumber = 0.2
+			lumber = 0.4
 			category = guild_input
 		}
 		rural_jewelry_carver = {
 			produced = jewelry
-			output = 0.12
+			output = 0.24
 		
-			stone = 0.3
+			stone = 0.6
 			category = guild_input
 		}
 		
 		rural_pottery_maker = {
 			produced = pottery
-			output = 0.6
+			output = 1.2
 		
-			clay = 0.6
+			clay = 1.2
 			category = guild_input
 		}
 	}
 
-	modifier = {
-		local_market_access = 0.002
-		local_peasants_estate_power = 0.25
-	}
 }
 
 rural_clothmaker = {
@@ -313,7 +295,7 @@ rural_clothmaker = {
 			wool = 0.48
 			
 			produced = cloth
-			output = 0.4
+			output = 0.36
 			
 			category = guild_input
 		}
@@ -332,7 +314,7 @@ rural_clothmaker = {
 			fiber_crops = 0.3
 			
 			produced = cloth
-			output = 0.4
+			output = 0.32
 			
 			category = guild_input
 		}
@@ -428,7 +410,7 @@ elephant_hunting_grounds = {
 			}
 		}
 	}
-	pop_type = peasants
+	pop_type = laborers
 	
 	category = rgo_building_category
 	employment_size = elephant_hunting_grounds_employment
@@ -601,7 +583,7 @@ sawmill = {
 
 sheep_farms = {
 	is_foreign = no
-	pop_type = peasants
+	pop_type = laborers
 	max_levels = rural_building_cap
 	
 	category = village_category
@@ -631,20 +613,13 @@ sheep_farms = {
 		
 		sheep_farm_maintenance = {
 			produced = wool
-			output = 0.48
+			output = 0.96
 			
-			lumber = 0.12
-			tools = 0.04
+			lumber = 0.24
+			tools = 0.08
 			category = building_maintenance
 		}
 	}
-
-	modifier = {
-		local_peasants_estate_power = 0.25		#25% higher here.
-		local_food_capacity = 50		
-	}
-
-	
 
 	build_time = rural_build_time
 

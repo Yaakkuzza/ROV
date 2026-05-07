@@ -62,7 +62,7 @@ country_base_values = {
 	fort_limit = 1 #default so everyone can have one fort
 
 	government_reform_slots = 1
-	government_size = 2
+	government_size = 1
 
 	privateer_durability = 0.05
 	
@@ -131,14 +131,14 @@ country_base_values = {
 	monthly_inflation = -0.001
 
 	
-	sea_cost_on_distance_from_capital_when_maritime = 4
-	sea_cost_on_distance_from_capital = 30
-	road_cost_on_distance_from_capital = 10
-	land_cost_on_distance_from_capital = 10
-	port_cost_distance_from_capital = 40
-	land_cost_going_upstream	= 6
-	land_cost_going_downstream	= 6
-	land_cost_on_frozen_water = 12
+	sea_cost_on_distance_from_capital_when_maritime = 12
+	sea_cost_on_distance_from_capital = 24
+	road_cost_on_distance_from_capital = 18
+	land_cost_on_distance_from_capital = 18
+	port_cost_distance_from_capital = 36
+	land_cost_going_upstream	= 12
+	land_cost_going_downstream	= 12
+	land_cost_on_frozen_water = 21
 	
 	global_migration_speed = 0.0001
 	
@@ -554,7 +554,7 @@ low_republican_tradition = {
 		add = 1
 	}
 
-	stability_cost = 2.0
+	global_estate_max_tax = -0.2
 }
 
 high_devotion = {
@@ -579,7 +579,7 @@ low_devotion = {
 		add = 1
 	}
 
-	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	global_estate_target_satisfaction = 0.5
 
 }
 
@@ -605,7 +605,7 @@ low_horde_unity = {
 		add = 1
 	}
 
-	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	global_estate_target_satisfaction = 0.5
 }
 
 high_tribal_cohesion = {
@@ -630,7 +630,7 @@ low_tribal_cohesion = {
 		add = 1
 	}
 
-	global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	global_estate_target_satisfaction = 0.5
 
 }
 
